@@ -1,5 +1,194 @@
-#home{
+.image-div{
+  background-image: url(./../../assets/taxi.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-div h1{
+  padding-top: 120px;
+  letter-spacing: 20px;
+  font-weight: 600;
+  font-size: 4.0em;
+  color: white;
+  text-align: center;
+}
+
+.image-div h1::first-letter{
+  color: #FBAA12;
+}
+.image-div p{
+  padding-bottom: 200px;
+  letter-spacing: 10px;
+  font-weight: 500;
+  font-size: 1.6em;
+  color: white;
+  text-align: center;
+}
+
+.contact {
+  background-color: #FBAA12;
   padding-top: 50px;
   padding-bottom: 50px;
-  background-image: '';
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.contact-image img{
+  height: 300px;
+}
+
+.contact-image{
+  width: 30%;
+}
+
+.contact-content{
+  width: 70%;
+  padding-top: 10px;
+}
+
+.contact-content h2{
+  font-size: 80px;
+}
+
+.contact-content h3{
+  font-size: 80px;
+  color: white;
+}
+
+.contact-content p{
+  font-size: 30px;
+  letter-spacing: 10px;
+}
+
+.feature-container img{
+  height: 100px;
+}
+
+.features{
+  background-image: url(./../../assets/feature-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.feature{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.feature span{
+  color: white;
+  font-size: 30px;
+  padding-left: 20px;
+}
+
+.about-us h2{
+  font-weight: 900;
+  font-size: 50px;
+}
+
+.about-us h2 span{
+  font-weight: 300;
+}
+
+.book-now-button{
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #FBAA12;
+  color: white;
+  border-radius: 7px;
+  outline: #FBAA12;
+}
+
+.about-us {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.vehicles img{
+  width: 100%;
+}
+
+.vehicles button{
+  width: 150px;
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.card{
+  padding: 0px;
+  border: 0px;
+}
+
+.vehicles{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.contact-us{
+  text-align: center;
+  font-size: 20px;
+}
+
+.contact-us h2{
+  text-align: left;
+}
+
+.contact-us h2{
+  font-weight: 900;
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+
+.contact-us h2 span{
+  font-weight: 300;
+}
+
+.contact-us{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+h3 a{
+  color: white;
+}
+
+h3 a:hover{
+  color: white;
+}
+
+p a{
+  color: black;
+}
+
+p a:hover{
+  color: black;
+}
+
+button a{
+  color: white;
+}
+
+button a:hover{
+  color: white;
+}
+
+@media only screen and (max-width:800px){
+  .contact{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-content{
+    padding-top: 20px;
+  }
+  
 }

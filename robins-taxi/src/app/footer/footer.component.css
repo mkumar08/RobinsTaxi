@@ -8,3 +8,36 @@
 .orange-button{
   margin: 0 auto;
 }
+
+.second-column{
+  text-align: center;
+}
+
+.second-column h2{
+  letter-spacing: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.second-column img{
+  height: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+hr{
+  color: white;
+  width: 10px;
+}
+
+.copyrite{
+  text-align: center;
+}
+a{
+  color: white;
+}
+
+a:hover{
+  color: white;
+}
