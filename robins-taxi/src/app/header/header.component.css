@@ -1,0 +1,31 @@
+.navbar{
+  display: flex;
+  align-items: center;
+  height: 70px;
+  color: white;
+}
+
+section{
+  background-color: black;
+}
+
+.site-title{
+  color: white;
+}
+
+.navbar nav ul{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 0px;
+}
+
+.navbar nav li a{
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar nav li a:hover{
+  color: #f5ab41;
+}
