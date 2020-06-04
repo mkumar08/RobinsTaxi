@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="80" viewBox="0 0 100 80">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fbaa12;
+      }
+    </style>
+  </defs>
+  <path id="ic_markunread_24px" class="cls-1" d="M92,4H12A9.987,9.987,0,0,0,2.05,14L2,74A10.029,10.029,0,0,0,12,84H92a10.029,10.029,0,0,0,10-10V14A10.029,10.029,0,0,0,92,4Zm0,20L52,49,12,24V14L52,39,92,14Z" transform="translate(-2 -4)"/>
+</svg>

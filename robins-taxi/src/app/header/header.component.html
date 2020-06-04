@@ -15,8 +15,8 @@
     </nav>
     <div class="phone-header">
       <!-- phone no -->
-      <img src="./../../assets/call.png" alt="">
-      <h3><a href="tel:+1845-343-5555">845-343-5555</a></h3>
+      <img src="./../../assets/call.svg" alt="">
+      <h3><a href="tel:+1845-343-5555">+1 845-343-5555</a></h3>
     </div>
     <img class="ham-menu" src="./../../assets/open-menu.svg"  (click)="menuClicked()" alt="">
   </div>
@@ -27,6 +27,8 @@
       <li><a (click)="closeClicked()" href="#about">About</a></li>
       <li><a (click)="closeClicked()" href="#contact">Contact</a></li>
       <li><a (click)="closeClicked()" href="#footer">Services</a></li>
+      <li></li>
+      <li><a href="tel:+1 845-343-5555" (click)="closeClicked()"> <img src="../../assets/call.svg">+1 845-343-5555</a></li>
     </ul>
   </div>
 </section>

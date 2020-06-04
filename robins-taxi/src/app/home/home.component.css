@@ -1,11 +1,11 @@
 .image-div{
-  background-image: url(./../../assets/taxi.png);
+  background-image: url(./../../assets/taxi.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .image-div h1{
-  padding-top: 120px;
   letter-spacing: 20px;
   font-weight: 600;
   font-size: 4.0em;
@@ -13,11 +13,21 @@
   text-align: center;
 }
 
+.header-image-text{
+  margin: 0 auto;
+  margin-top: 100px;
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+
+.overlay-div{
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 .image-div h1::first-letter{
   color: #FBAA12;
 }
 .image-div p{
-  padding-bottom: 200px;
   letter-spacing: 10px;
   font-weight: 500;
   font-size: 1.6em;
@@ -64,6 +74,19 @@
 .feature-container img{
   height: 100px;
 }
+
+.contact-us img{
+  max-height: 65px;
+}
+
+.contact-us .col-md{
+  padding-top: 20px;
+}
+
+.contact-us p, .contact-us address{
+  margin-top: 10px;
+}
+
 
 .features{
   background-image: url(./../../assets/feature-bg.png);
@@ -190,19 +213,19 @@ button a:hover{
   .contact-content{
     padding-top: 10px;
   }
-  
+
 }
 
 @media only screen and (min-width:800px){
   .contact-content h2{
     font-size: 3.0rem;
   }
-  
+
   .contact-content h3{
     font-size: 3.5rem;
     color: white;
   }
-  
+
   .contact-content p{
     font-size: 1.0em;
     letter-spacing: 10px;
