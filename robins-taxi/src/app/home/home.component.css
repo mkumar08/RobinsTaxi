@@ -35,7 +35,7 @@
 }
 
 .contact-image img{
-  height: 300px;
+  max-height: 200px;
 }
 
 .contact-image{
@@ -48,16 +48,16 @@
 }
 
 .contact-content h2{
-  font-size: 80px;
+  font-size: 1.5rem;
 }
 
 .contact-content h3{
-  font-size: 80px;
+  font-size: 2.0rem;
   color: white;
 }
 
 .contact-content p{
-  font-size: 30px;
+  font-size: 1em;
   letter-spacing: 10px;
 }
 
@@ -108,7 +108,7 @@
 }
 
 .about-us {
-  padding-top: 30px;
+  padding-top: 60px;
   padding-bottom: 30px;
 }
 
@@ -188,7 +188,23 @@ button a:hover{
   }
 
   .contact-content{
-    padding-top: 20px;
+    padding-top: 10px;
   }
   
+}
+
+@media only screen and (min-width:800px){
+  .contact-content h2{
+    font-size: 3.0rem;
+  }
+  
+  .contact-content h3{
+    font-size: 3.5rem;
+    color: white;
+  }
+  
+  .contact-content p{
+    font-size: 1.0em;
+    letter-spacing: 10px;
+  }
 }

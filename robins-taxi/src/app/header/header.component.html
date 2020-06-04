@@ -1,22 +1,32 @@
-<section>
+<section class="nav">
   <div class="container navbar">
     <div>
       <!-- logo and branding -->
       <h1 class="site-title">Robin's Taxi</h1>
     </div>
-    <nav>
+    <nav class="menu-header">
       <!-- menu -->
       <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact</a></li>
-        <li><a href="">Services</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#footer">Services</a></li>
       </ul>
     </nav>
-    <div>
+    <div class="phone-header">
       <!-- phone no -->
       <img src="./../../assets/call.png" alt="">
       <h3><a href="tel:+1845-343-5555">845-343-5555</a></h3>
     </div>
+    <img class="ham-menu" src="./../../assets/open-menu.svg"  (click)="menuClicked()" alt="">
+  </div>
+  <div class="overlay" #mobile>
+    <img src="./../../assets/close.svg"   class="close" alt="" (click)="closeClicked()">
+    <ul>
+      <li><a (click)="closeClicked()" href="#home">Home</a></li>
+      <li><a (click)="closeClicked()" href="#about">About</a></li>
+      <li><a (click)="closeClicked()" href="#contact">Contact</a></li>
+      <li><a (click)="closeClicked()" href="#footer">Services</a></li>
+    </ul>
   </div>
 </section>
