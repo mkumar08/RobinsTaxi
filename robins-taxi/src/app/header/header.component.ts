@@ -11,8 +11,7 @@ export class HeaderComponent implements OnInit, AfterViewInit{
   
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   ngAfterViewInit(){
     this.mobileMenu.nativeElement.style.display = "none";
