@@ -6,7 +6,7 @@
 }
 
 .image-div h1{
-  letter-spacing: 20px;
+  letter-spacing: 16px;
   font-weight: 600;
   font-size: 4.0em;
   color: white;
@@ -106,7 +106,18 @@
 .feature span{
   color: white;
   font-size: 30px;
-  padding-left: 20px;
+}
+
+.feature .fast-safe{
+  padding-left: 6px;
+}
+
+.feature .cars-line{
+  padding-right: 3px;
+}
+
+.feature .clean-sanatized{
+  padding-right: 7px;
 }
 
 .about-us h2{
