@@ -9,11 +9,14 @@
         <p>Taxi to New York City</p>
         <p>Taxi to New York Airports</p>
         <p>Non-Emergency Medical Transportation</p>
+        <p></p>
       </div>
       <div class="col-md second-column">
         <!-- col 2 -->
-        <button class="orange-button"><a href="#book-now">BOOK A TAXI NOW</a></button>
         <h2>ROBINS TAXI</h2>
+        <button (click)="onNavigatetoTaxiReservation()" class="orange-button"><a href="https://portal.pergorides.io/reservation/?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYm5hbWUiOiJwZXJnbzMzOTY0Y2FyIiwiaWF0IjoxNjgwMjkxMjQ3fQ.uUxP9zfAul33_WUULS_iiK_mWqzr4hPkAfmcM02a3rQ&type=passenger">BOOK A TAXI NOW</a></button>
+        <button (click)="onNavigatetoMedicalReservation()" class="orange-button">Arrange Medical Transportation</button>
+        <br>
         <a href="https://www.facebook.com/robinstaxi86/" target="_blank"><img src="./../../assets/facebook.svg" alt=""></a>
         <a href="https://www.facebook.com/robinstaxi86/" target="_blank"><img src="./../../assets/instagram.svg" alt=""></a>
         <a href="https://www.facebook.com/robinstaxi86/" target="_blank"><img src="./../../assets/twitter.svg" alt=""></a>

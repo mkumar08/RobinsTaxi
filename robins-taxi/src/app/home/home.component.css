@@ -1,11 +1,11 @@
-.image-div{
+.image-div {
   background-image: url(./../../assets/taxi.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.image-div h1{
+.image-div h1 {
   letter-spacing: 16px;
   font-weight: 600;
   font-size: 4.0em;
@@ -13,21 +13,22 @@
   text-align: center;
 }
 
-.header-image-text{
+.header-image-text {
   margin: 0 auto;
   margin-top: 100px;
   padding-top: 100px;
   margin-bottom: 100px;
 }
 
-.overlay-div{
+.overlay-div {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-.image-div h1::first-letter{
+.image-div h1::first-letter {
   color: #FBAA12;
 }
-.image-div p{
+
+.image-div p {
   letter-spacing: 10px;
   font-weight: 500;
   font-size: 1.6em;
@@ -44,51 +45,51 @@
   text-align: center;
 }
 
-.contact-image img{
+.contact-image img {
   max-height: 200px;
 }
-
-.contact-image{
+.contact-image {
   width: 30%;
 }
 
-.contact-content{
+.contact-content {
   width: 70%;
   padding-top: 10px;
 }
 
-.contact-content h2{
+.contact-content h2 {
   font-size: 1.5rem;
 }
 
-.contact-content h3{
+.contact-content h3 {
   font-size: 2.0rem;
   color: white;
 }
 
-.contact-content p{
+.contact-content p {
   font-size: 1em;
   letter-spacing: 10px;
 }
 
-.feature-container img{
+.feature-container img {
   height: 100px;
 }
 
-.contact-us img{
+.contact-us img {
   max-height: 65px;
 }
 
-.contact-us .col-md{
+.contact-us .col-md {
   padding-top: 20px;
 }
 
-.contact-us p, .contact-us address{
+.contact-us p,
+.contact-us address {
   margin-top: 10px;
 }
 
 
-.features{
+.features {
   background-image: url(./../../assets/feature-bg.png);
   background-position: center;
   background-size: cover;
@@ -98,38 +99,38 @@
   text-align: center;
 }
 
-.feature{
+.feature {
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-.feature span{
+.feature span {
   color: white;
   font-size: 30px;
 }
 
-.feature .fast-safe{
+.feature .fast-safe {
   padding-left: 6px;
 }
 
-.feature .cars-line{
+.feature .cars-line {
   padding-right: 3px;
 }
 
-.feature .clean-sanatized{
+.feature .clean-sanatized {
   padding-right: 7px;
 }
 
-.about-us h2{
+.about-us h2 {
   font-weight: 900;
   font-size: 50px;
 }
 
-.about-us h2 span{
+.about-us h2 span {
   font-weight: 300;
 }
 
-.book-now-button{
+.book-now-button {
   border: none;
   padding-left: 20px;
   padding-right: 20px;
@@ -146,98 +147,108 @@
   padding-bottom: 30px;
 }
 
-.vehicles img{
+.vehicles img {
   width: 100%;
 }
 
-.vehicles button{
+.vehicles button {
   width: 150px;
   margin-left: 50px;
   margin-top: 10px;
   margin-bottom: 20px;
 }
 
-.card{
+.card {
   padding: 0px;
   border: 0px;
 }
 
-.vehicles{
+.vehicles {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.contact-us{
+#iframe-box{
+  position: relative;
+}
+
+.responsive-iframe {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+}
+
+.contact-us {
   text-align: center;
   font-size: 20px;
 }
 
-.contact-us h2{
+.contact-us h2 {
   text-align: left;
 }
 
-.contact-us h2{
+.contact-us h2 {
   font-weight: 900;
   font-size: 50px;
   padding-bottom: 20px;
 }
 
-.contact-us h2 span{
+.contact-us h2 span {
   font-weight: 300;
 }
 
-.contact-us{
+.contact-us {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-h3 a{
+h3 a {
   color: white;
 }
 
-h3 a:hover{
+h3 a:hover {
   color: white;
 }
 
-p a{
+p a {
   color: black;
 }
 
-p a:hover{
+p a:hover {
   color: black;
 }
 
-button a{
+button a {
   color: white;
 }
 
-button a:hover{
+button a:hover {
   color: white;
 }
 
-@media only screen and (max-width:800px){
-  .contact{
+@media only screen and (max-width:800px) {
+  .contact {
     flex-direction: column;
     align-items: center;
   }
 
-  .contact-content{
+  .contact-content {
     padding-top: 10px;
   }
 
 }
 
-@media only screen and (min-width:800px){
-  .contact-content h2{
+@media only screen and (min-width:800px) {
+  .contact-content h2 {
     font-size: 3.0rem;
   }
 
-  .contact-content h3{
+  .contact-content h3 {
     font-size: 3.5rem;
     color: white;
   }
 
-  .contact-content p{
+  .contact-content p {
     font-size: 1.0em;
     letter-spacing: 10px;
   }
