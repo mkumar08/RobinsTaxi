@@ -1,118 +1,147 @@
-.nav{
+/* Base styles */
+.nav {
   position: fixed;
   width: 100%;
   z-index: 100;
-}
-
-.navbar{
-  display: flex;
-  align-items: center;
-  height: 70px;
-  color: white;
-}
-
-section{
   background-color: rgba(0, 0, 0, 0.9);
 }
 
-.site-title{
+.navbar {
+  display: flex;
+  align-items: left;
+  justify-content: space-between; /* Elements spaced out evenly */
+  height: 70px;
   color: white;
+  padding: 0 10px; /* Padding on the sides */
 }
 
-.navbar nav ul{
+/* Flex container for the menu icon and site title */
+.col-md {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: flex-start; /* Start items from the left side */
+}
+
+/* Style for the hamburger menu */
+.ham-menu {
+  display: block; /* Shown on mobile view */
+  cursor: pointer;
+  margin-right: 20px; /* Space between menu icon and the title */
+}
+
+/* Style for the site title */
+.site-title {
+  color: white;
+  font-size: 2rem; /* Base font size */
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+}
+
+/* Navbar menu list styles */
+.navbar nav ul {
   list-style-type: none;
   display: flex;
   align-items: center;
   margin: 0px;
 }
 
-.navbar nav li a{
+/* Navbar menu link styles */
+.navbar nav li a {
   padding: 10px;
   color: white;
   text-decoration: none;
 }
 
-.navbar nav li a:hover{
+/* Navbar menu link hover effect */
+.navbar nav li a:hover {
   color: #f5ab41;
 }
 
-img{
+/* Styles for all images, adjust as necessary */
+img {
   height: 30px;
   padding-right: 10px;
 }
 
-h3{
+/* Style for phone number header */
+h3 {
   display: inline;
 }
 
-h3 a{
+h3 a {
   color: white;
 }
 
-h3 a:hover{
+h3 a:hover {
   color: white;
 }
 
-.overlay{
-    font-size: 2em;
-    color: white;
-    width: 100vw;
-    overflow-y: scroll;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: fixed;
-    display: flex;
-    z-index: 100;
-    background-color: black;
-    text-align: center;
-    padding-top: 50px;
-    align-items: center;
-    justify-content: center;
+/* Overlay styles */
+.overlay {
+  font-size: 2em;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none; /* Initially hidden */
+  z-index: 100;
+  background-color: black;
+  padding-top: 50px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
-
-li{
+/* Styles for list items */
+li {
   text-decoration: none;
   list-style-type: none;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-ul{
+/* Styles for unordered lists */
+ul {
   padding: 0px;
 }
 
-.close{
+/* Close button styles */
+.close {
   position: absolute;
   right: 20px;
   top: 20px;
   cursor: pointer;
 }
 
-.ham-menu{
-  display: none;
+/* Media queries for responsive adjustments */
+@media only screen and (max-width: 995px) {
+  .col-md {
+    justify-content: center; /* Center items horizontally */
+  }
+
+  .ham-menu {
+    order: -1; /* Place menu icon before the title */
+    display: inline; /* Ensure it's displayed */
+    margin-right: 20px; /* Space between menu icon and the title */
+  }
+
+  .menu-header, .phone-header {
+    display: none; /* Hide on smaller screens */
+  }
+
+  .site-title {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .navbar {
+    justify-content: space-between; /* Keep items spaced on smaller screens */
+  }
+
+  .overlay {
+    display: flex; /* Show the overlay when needed */
+  }
 }
 
-@media only screen and (max-width:995px){
-  .ham-menu{
-    display: inline;
-  }
-  .menu-header{
-    display: none;
-  }
-  .phone-header{
-    display: none;
-  }
-}
-
-.overlay ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-.ham-menu{
-  cursor: pointer;
-}
+/* Additional styles can be added below as needed */
