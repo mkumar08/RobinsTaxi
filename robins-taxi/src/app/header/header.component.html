@@ -1,7 +1,9 @@
 <section class="nav">
   <div class="container navbar">
     <div class="col-md">
-      <img class="ham-menu" src="./../../assets/open-menu.svg"  (click)="menuClicked()" alt="">
+      <button class="ham-menu" aria-label="Open menu" (click)="menuClicked()" (keydown.enter)="menuClicked()" (keydown.space)="menuClicked()">
+        <img src="./../../assets/open-menu.svg" alt="Menu icon" />
+      </button>
       <!-- logo and branding -->
       <h1 class="site-title">Robin's Taxi</h1>
     </div>
@@ -16,19 +18,21 @@
     </nav>
     <div class="phone-header">
       <!-- phone no -->
-      <img src="./../../assets/call.svg" alt="">
+      <img src="./../../assets/call.svg" alt="Phone icon" />
       <h3><a href="tel:+1845-343-5555">+1 845-343-5555</a></h3>
     </div>
   </div>
   <div class="overlay" #mobile>
-    <img src="./../../assets/close.svg"   class="close" alt="" (click)="closeClicked()">
+    <button class="close" aria-label="Close menu" (click)="closeClicked()" (keydown.enter)="closeClicked()" (keydown.escape)="closeClicked()">
+      <img src="./../../assets/close.svg" alt="Close icon" />
+    </button>
     <ul>
       <li><a (click)="closeClicked()" href="#home">Home</a></li>
       <li><a (click)="closeClicked()" href="#about">About</a></li>
       <li><a (click)="closeClicked()" href="#contact">Contact</a></li>
       <li><a (click)="closeClicked()" href="#footer">Services</a></li>
       <li></li>
-      <li><a href="tel:+1 845-343-5555" (click)="closeClicked()"> <img src="../../assets/call.svg">+1 845-343-5555</a></li>
+      <li><a href="tel:+1 845-343-5555" (click)="closeClicked()"> <img src="../../assets/call.svg" alt="Phone icon" />+1 845-343-5555</a></li>
     </ul>
   </div>
 </section>
