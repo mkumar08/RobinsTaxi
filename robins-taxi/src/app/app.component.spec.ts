@@ -1,16 +1,14 @@
-import { TestBed, async } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
+import { TestBed, waitForAsync } from '@angular/core/testing';
+import { provideRouter } from '@angular/router';
+
+import { appRoutes } from './app.routes';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
-      declarations: [
-        AppComponent
-      ],
+      imports: [AppComponent],
+      providers: [provideRouter(appRoutes)],
     }).compileComponents();
   }));
 
@@ -26,10 +24,11 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('robins-taxi');
   });
 
-  it('should render title in a h1 tag', () => {
+  it('should render header and footer', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to robins-taxi!');
+    expect(compiled.querySelector('app-header')).toBeTruthy();
+    expect(compiled.querySelector('app-footer')).toBeTruthy();
   });
 });
