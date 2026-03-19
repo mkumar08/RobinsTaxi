@@ -37,6 +37,11 @@
   padding: 0; /* Reset padding */
 }
 
+.site-title a {
+  color: white;
+  text-decoration: none;
+}
+
 /* Navbar menu list styles */
 .navbar nav ul {
   list-style-type: none;
@@ -55,6 +60,49 @@
 /* Navbar menu link hover effect */
 .navbar nav li a:hover {
   color: #f5ab41;
+}
+
+/* Dropdown menu */
+.has-dropdown {
+  position: relative;
+}
+
+.has-dropdown > a::after {
+  content: " ▾";
+  font-size: 0.75em;
+}
+
+.dropdown-menu-custom {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  min-width: 220px;
+  border-top: 2px solid #f5ab41;
+  z-index: 200;
+  padding: 8px 0;
+  flex-direction: column;
+}
+
+.has-dropdown:hover .dropdown-menu-custom {
+  display: flex;
+}
+
+.dropdown-menu-custom li {
+  padding: 4px 0;
+}
+
+.dropdown-menu-custom li a {
+  display: block;
+  padding: 8px 16px;
+  color: white;
+  white-space: nowrap;
+}
+
+.dropdown-menu-custom li a:hover {
+  color: #f5ab41;
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 /* Styles for all images, adjust as necessary */
@@ -92,6 +140,7 @@ h3 a:hover {
   text-align: center;
   align-items: center;
   justify-content: center;
+  overflow-y: auto;
 }
 
 /* Styles for list items */
@@ -113,6 +162,16 @@ ul {
   right: 20px;
   top: 20px;
   cursor: pointer;
+}
+
+/* Mobile services label */
+.mobile-services-label {
+  font-size: 0.75em;
+  color: #f5ab41;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-top: 16px;
+  padding-bottom: 4px;
 }
 
 /* Media queries for responsive adjustments */
