@@ -1,82 +1,419 @@
-.image-div {
+/* ===== HERO ===== */
+.hero-div {
   background-image: url(./../../assets/taxi.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-.image-div h1 {
-  letter-spacing: 16px;
-  font-weight: 600;
-  font-size: 4.0em;
-  color: white;
-  text-align: center;
-}
-
-.header-image-text {
-  margin: 0 auto;
-  margin-top: 100px;
-  padding-top: 100px;
-  margin-bottom: 100px;
+  min-height: 90vh;
 }
 
 .overlay-div {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.65);
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
 }
 
-.image-div h1::first-letter {
+.hero-content {
+  padding: 80px 0 60px;
+  text-align: center;
+}
+
+.hero-tagline {
+  color: #FBAA12;
+  font-size: 1rem;
+  letter-spacing: 6px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.hero-title {
+  color: #ffffff;
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: 10px;
+  margin-bottom: 16px;
+  line-height: 1.1;
+}
+
+.hero-title::first-letter {
   color: #FBAA12;
 }
 
-.image-div p {
-  letter-spacing: 10px;
-  font-weight: 500;
-  font-size: 1.6em;
-  color: white;
-  text-align: center;
+.hero-subtitle {
+  color: #ddd;
+  font-size: 1.1rem;
+  letter-spacing: 4px;
+  margin-bottom: 40px;
 }
 
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary-cta {
+  background-color: #FBAA12;
+  color: #000;
+  font-weight: 700;
+  padding: 14px 36px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-primary-cta:hover {
+  background-color: #e09400;
+  color: #000;
+  text-decoration: none;
+}
+
+.btn-secondary-cta {
+  background-color: transparent;
+  border: 2px solid #FBAA12;
+  color: #FBAA12;
+  font-weight: 600;
+  padding: 12px 34px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-secondary-cta:hover {
+  background-color: #FBAA12;
+  color: #000;
+  text-decoration: none;
+}
+
+/* ===== CALL STRIP ===== */
 .contact {
   background-color: #FBAA12;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 40px 20px;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  gap: 20px;
 }
 
 .contact-image img {
-  max-height: 200px;
+  max-height: 160px;
 }
+
 .contact-image {
-  width: 30%;
+  flex-shrink: 0;
 }
 
 .contact-content {
-  width: 70%;
   padding-top: 10px;
 }
 
 .contact-content h2 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  margin-bottom: 4px;
+  font-weight: 700;
 }
 
 .contact-content h3 {
-  font-size: 2.0rem;
+  font-size: 2.6rem;
   color: white;
+  margin-bottom: 6px;
 }
 
 .contact-content p {
-  font-size: 1em;
-  letter-spacing: 10px;
+  font-size: 0.9rem;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+/* ===== FEATURES ===== */
+.features {
+  background-image: url(./../../assets/feature-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  padding: 60px 0;
+  text-align: center;
 }
 
 .feature-container img {
   height: 100px;
 }
 
+.feature {
+  padding: 40px 20px;
+}
+
+.feature span {
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+/* ===== SECTION TITLES (shared) ===== */
+.section-title {
+  font-weight: 900;
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.section-title span {
+  font-weight: 300;
+}
+
+.section-title.light {
+  color: #ffffff;
+}
+
+.section-title.light span {
+  color: #FBAA12;
+}
+
+.section-subtitle {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 40px;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.section-subtitle.light {
+  color: #ccc;
+}
+
+/* ===== SERVICES SECTION ===== */
+.services-section {
+  background-color: #f8f8f8;
+  padding: 70px 0;
+}
+
+.services-grid {
+  margin-top: 10px;
+}
+
+.service-card-wrap {
+  padding: 14px;
+}
+
+.service-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 32px 24px;
+  height: 100%;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.service-icon {
+  font-size: 2.8rem;
+  margin-bottom: 14px;
+  line-height: 1;
+}
+
+.service-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.service-card p {
+  font-size: 0.92rem;
+  color: #555;
+  line-height: 1.7;
+  flex-grow: 1;
+}
+
+.service-book-link {
+  display: inline-block;
+  margin-top: 16px;
+  color: #FBAA12;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.service-book-link:hover {
+  color: #c98800;
+  text-decoration: none;
+}
+
+/* ===== RESERVATION SECTION ===== */
+.reservation-section {
+  background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
+  padding: 70px 0;
+}
+
+.booking-form {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 40px 36px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+}
+
+.booking-form label {
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.booking-form .form-control {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  padding: 10px 14px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.booking-form .form-control:focus {
+  border-color: #FBAA12;
+  box-shadow: 0 0 0 3px rgba(251,170,18,0.2);
+  outline: none;
+}
+
+.required {
+  color: #e53e3e;
+}
+
+.btn-submit {
+  background-color: #FBAA12;
+  color: #000;
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 14px 48px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 8px;
+}
+
+.btn-submit:hover:not(:disabled) {
+  background-color: #e09400;
+}
+
+.btn-submit:disabled {
+  opacity: 0.75;
+  cursor: default;
+}
+
+.booking-success {
+  background: #f0fff4;
+  border: 1px solid #68d391;
+  border-radius: 6px;
+  padding: 18px 24px;
+  margin-top: 20px;
+  color: #276749;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.booking-success a {
+  color: #276749;
+  text-decoration: underline;
+}
+
+/* ===== ABOUT US ===== */
+.about-us {
+  padding: 70px 15px 50px;
+}
+
+.about-us h2 {
+  font-weight: 900;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.about-us h2 span {
+  font-weight: 300;
+}
+
+/* ===== FLEET ===== */
+.vehicles {
+  background-color: #111;
+  padding: 60px 0;
+}
+
+.vehicles .section-title {
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.vehicles .section-title span {
+  color: #FBAA12;
+}
+
+.vehicles img {
+  width: 100%;
+  display: block;
+}
+
+.vehicle-label {
+  background-color: #FBAA12;
+  color: #000;
+  text-align: center;
+  font-weight: 700;
+  padding: 10px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card {
+  padding: 0;
+  border: 0;
+}
+
+/* ===== CONTACT US ===== */
+.contact-us {
+  text-align: center;
+  font-size: 18px;
+  padding: 60px 15px;
+}
+
+.contact-us h2 {
+  text-align: left;
+  font-weight: 900;
+  font-size: 2.8rem;
+  padding-bottom: 20px;
+}
+
+.contact-us h2 span {
+  font-weight: 300;
+}
+
 .contact-us img {
-  max-height: 65px;
+  max-height: 60px;
+  display: block;
+  margin: 0 auto 10px;
 }
 
 .contact-us .col-md {
@@ -88,120 +425,7 @@
   margin-top: 10px;
 }
 
-
-.features {
-  background-image: url(./../../assets/feature-bg.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 500px;
-  padding-top: 50px;
-  text-align: center;
-}
-
-.feature {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.feature span {
-  color: white;
-  font-size: 30px;
-}
-
-.feature .fast-safe {
-  padding-left: 6px;
-}
-
-.feature .cars-line {
-  padding-right: 3px;
-}
-
-.feature .clean-sanatized {
-  padding-right: 7px;
-}
-
-.about-us h2 {
-  font-weight: 900;
-  font-size: 50px;
-}
-
-.about-us h2 span {
-  font-weight: 300;
-}
-
-.book-now-button {
-  border: none;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: #FBAA12;
-  color: white;
-  border-radius: 7px;
-  outline: #FBAA12;
-}
-
-.about-us {
-  padding-top: 60px;
-  padding-bottom: 30px;
-}
-
-.vehicles img {
-  width: 100%;
-}
-
-.vehicles button {
-  width: 150px;
-  margin-left: 50px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-.card {
-  padding: 0px;
-  border: 0px;
-}
-
-.vehicles {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-#iframe-box{
-  position: relative;
-}
-
-.responsive-iframe {
-  position: relative;
-  width: 100%;
-  height: 80vh;
-}
-
-.contact-us {
-  text-align: center;
-  font-size: 20px;
-}
-
-.contact-us h2 {
-  text-align: left;
-}
-
-.contact-us h2 {
-  font-weight: 900;
-  font-size: 50px;
-  padding-bottom: 20px;
-}
-
-.contact-us h2 span {
-  font-weight: 300;
-}
-
-.contact-us {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
+/* ===== LINK COLORS ===== */
 h3 a {
   color: white;
 }
@@ -218,38 +442,52 @@ p a:hover {
   color: black;
 }
 
-button a {
-  color: white;
-}
+/* ===== RESPONSIVE ===== */
+@media only screen and (max-width: 768px) {
+  .hero-title {
+    font-size: 2.4rem;
+    letter-spacing: 6px;
+  }
 
-button a:hover {
-  color: white;
-}
+  .hero-subtitle {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+  }
 
-@media only screen and (max-width:800px) {
   .contact {
     flex-direction: column;
     align-items: center;
   }
 
-  .contact-content {
-    padding-top: 10px;
+  .contact-content h3 {
+    font-size: 2rem;
   }
 
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .about-us h2 {
+    font-size: 2rem;
+  }
+
+  .contact-us h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .booking-form {
+    padding: 28px 20px;
+  }
 }
 
-@media only screen and (min-width:800px) {
+@media only screen and (min-width: 800px) {
   .contact-content h2 {
-    font-size: 3.0rem;
+    font-size: 2.4rem;
   }
 
   .contact-content h3 {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     color: white;
-  }
-
-  .contact-content p {
-    font-size: 1.0em;
-    letter-spacing: 10px;
   }
 }

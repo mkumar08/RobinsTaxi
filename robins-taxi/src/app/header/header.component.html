@@ -7,13 +7,14 @@
       <!-- logo and branding -->
       <h1 class="site-title">Robin's Taxi</h1>
     </div>
-    <nav class="menu-header">
+    <nav class="menu-header" aria-label="Main navigation">
       <!-- menu -->
       <ul>
         <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#reservation">Book Now</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#footer">Services</a></li>
       </ul>
     </nav>
     <div class="phone-header">
@@ -28,9 +29,10 @@
     </button>
     <ul>
       <li><a (click)="closeClicked()" href="#home">Home</a></li>
+      <li><a (click)="closeClicked()" href="#services">Services</a></li>
+      <li><a (click)="closeClicked()" href="#reservation">Book Now</a></li>
       <li><a (click)="closeClicked()" href="#about">About</a></li>
       <li><a (click)="closeClicked()" href="#contact">Contact</a></li>
-      <li><a (click)="closeClicked()" href="#footer">Services</a></li>
       <li></li>
       <li><a href="tel:+1 845-343-5555" (click)="closeClicked()"> <img src="../../assets/call.svg" alt="Phone icon" />+1 845-343-5555</a></li>
     </ul>
