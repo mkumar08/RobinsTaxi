@@ -1,0 +1,350 @@
+/* ============================================================
+   Shared styles for all service pages
+   ============================================================ */
+
+/* ---- Hero Banner ---- */
+.service-hero {
+  background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+  color: #fff;
+  padding: 100px 20px 60px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(251, 170, 18, 0.12);
+  pointer-events: none;
+}
+
+.service-hero .hero-icon {
+  font-size: 4rem;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.service-hero h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin: 0 0 12px;
+  letter-spacing: 1px;
+}
+
+.service-hero p {
+  font-size: 1.15rem;
+  max-width: 640px;
+  margin: 0 auto 28px;
+  opacity: 0.9;
+  line-height: 1.7;
+}
+
+.service-hero .cta-btn {
+  display: inline-block;
+  padding: 14px 36px;
+  background: #fbaa12;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.service-hero .cta-btn:hover {
+  background: #e09a0a;
+  transform: translateY(-2px);
+}
+
+/* ---- Overview Section ---- */
+.overview {
+  padding: 64px 20px;
+  background: #fff;
+}
+
+.overview .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.overview-text {
+  flex: 1 1 320px;
+}
+
+.overview-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #1a1a1a;
+}
+
+.overview-text h2 span {
+  color: #fbaa12;
+}
+
+.overview-text p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.overview-visual {
+  flex: 1 1 280px;
+  text-align: center;
+  font-size: 7rem;
+}
+
+/* ---- Features Grid ---- */
+.features-section {
+  padding: 64px 20px;
+  background: #f8f8f8;
+}
+
+.features-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #1a1a1a;
+}
+
+.features-section h2 span {
+  color: #fbaa12;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.feature-card .icon {
+  font-size: 2.4rem;
+  margin-bottom: 14px;
+  display: block;
+}
+
+.feature-card h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+}
+
+.feature-card p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* ---- Pricing / Info Table ---- */
+.pricing-section {
+  padding: 64px 20px;
+  background: #fff;
+}
+
+.pricing-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #1a1a1a;
+}
+
+.pricing-section h2 span {
+  color: #fbaa12;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.pricing-card {
+  border: 2px solid #ececec;
+  border-radius: 10px;
+  padding: 32px 24px;
+  text-align: center;
+  transition: border-color 0.2s;
+}
+
+.pricing-card.featured {
+  border-color: #fbaa12;
+  box-shadow: 0 4px 20px rgba(251, 170, 18, 0.2);
+}
+
+.pricing-card h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+}
+
+.pricing-card .price {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fbaa12;
+  margin: 12px 0;
+}
+
+.pricing-card .price span {
+  font-size: 0.9rem;
+  color: #888;
+  font-weight: 400;
+}
+
+.pricing-card p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* ---- FAQ Section ---- */
+.faq-section {
+  padding: 64px 20px;
+  background: #f8f8f8;
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #1a1a1a;
+}
+
+.faq-section h2 span {
+  color: #fbaa12;
+}
+
+.faq-list {
+  max-width: 780px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-item {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px 24px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+}
+
+.faq-item h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.faq-item p {
+  font-size: 0.92rem;
+  color: #666;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ---- CTA Banner ---- */
+.cta-section {
+  padding: 60px 20px;
+  background: #1a1a1a;
+  text-align: center;
+  color: #fff;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.cta-section p {
+  font-size: 1rem;
+  opacity: 0.85;
+  margin-bottom: 28px;
+}
+
+.cta-section .cta-btn {
+  display: inline-block;
+  padding: 14px 40px;
+  background: #fbaa12;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+  margin: 6px;
+}
+
+.cta-section .cta-btn:hover {
+  background: #e09a0a;
+  transform: translateY(-2px);
+}
+
+.cta-section .cta-btn.outline {
+  background: transparent;
+  border: 2px solid #fbaa12;
+  color: #fbaa12;
+}
+
+.cta-section .cta-btn.outline:hover {
+  background: #fbaa12;
+  color: #fff;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .service-hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .overview-visual {
+    display: none;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-hero {
+    padding: 80px 16px 48px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
