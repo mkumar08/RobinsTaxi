@@ -269,6 +269,27 @@ button a:hover {
 }
 
 @media only screen and (max-width:800px) {
+  .about-row {
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .about-text {
+    flex: 1 1 100% !important;
+    width: 100% !important;
+  }
+
+  .about-image {
+    flex: 1 1 100% !important;
+    min-width: unset !important;
+    width: 100% !important;
+  }
+
+  .about-us h2 {
+    font-size: 32px;
+  }
+
   .contact {
     flex-direction: column;
     align-items: center;
