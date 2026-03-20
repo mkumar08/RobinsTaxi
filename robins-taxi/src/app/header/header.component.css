@@ -27,6 +27,10 @@
   display: block; /* Shown on mobile view */
   cursor: pointer;
   margin-right: 20px; /* Space between menu icon and the title */
+  background: transparent;
+  border: 0;
+  padding: 0;
+  line-height: 0;
 }
 
 /* Style for the site title */
@@ -67,13 +71,26 @@
   position: relative;
 }
 
-.has-dropdown > a::after {
+.services-toggle {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+.services-toggle:hover {
+  color: #f5ab41;
+}
+
+.has-dropdown > .services-toggle::after {
   content: " ▾";
   font-size: 0.75em;
 }
 
 .dropdown-menu-custom {
-  display: none;
   position: absolute;
   top: 100%;
   left: 0;
@@ -85,9 +102,7 @@
   flex-direction: column;
 }
 
-.has-dropdown:hover .dropdown-menu-custom {
-  display: flex;
-}
+/* dropdown visibility is controlled via [style.display] binding in the template */
 
 .dropdown-menu-custom li {
   padding: 4px 0;
@@ -143,6 +158,16 @@ h3 a:hover {
   overflow-y: auto;
 }
 
+/* Mobile services label */
+.mobile-services-label {
+  font-size: 0.75em;
+  color: #f5ab41;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-top: 16px;
+  padding-bottom: 4px;
+}
+
 /* Styles for list items */
 li {
   text-decoration: none;
@@ -162,6 +187,9 @@ ul {
   right: 20px;
   top: 20px;
   cursor: pointer;
+  background: transparent;
+  border: 0;
+  padding: 0;
 }
 
 /* Mobile services label */
