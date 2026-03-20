@@ -10,7 +10,6 @@
     <nav class="menu-header">
       <!-- menu -->
       <ul>
-<<<<<<< Updated upstream
         <li><a routerLink="/" fragment="home">Home</a></li>
         <li><a routerLink="/" fragment="about">About</a></li>
         <li class="has-dropdown" [class.open]="servicesDropdownOpen">
@@ -32,29 +31,6 @@
           </ul>
         </li>
         <li><a routerLink="/" fragment="contact">Contact</a></li>
-=======
-        <li><a routerLink="/" fragment="home">Home</a></li>
-        <li><a routerLink="/" fragment="about">About</a></li>
-        <li class="has-dropdown" [class.open]="servicesDropdownOpen">
-          <button
-            type="button"
-            class="services-toggle"
-            aria-haspopup="true"
-            [attr.aria-expanded]="servicesDropdownOpen"
-            (click)="toggleServicesDropdown($event)"
-          >
-            Services
-          </button>
-          <ul class="dropdown-menu-custom" [style.display]="servicesDropdownOpen ? 'flex' : 'none'">
-            <li><a routerLink="/services/airport-trips" (click)="closeServicesDropdown()">Airport Trips</a></li>
-            <li><a routerLink="/services/sightseeing-tours" (click)="closeServicesDropdown()">Sightseeing Tours</a></li>
-            <li><a routerLink="/services/long-distance-trips" (click)="closeServicesDropdown()">Long-Distance Trips</a></li>
-            <li><a routerLink="/services/local-transportation" (click)="closeServicesDropdown()">Local Transportation</a></li>
-            <li><a routerLink="/services/medical-transportation" (click)="closeServicesDropdown()">Medical Transportation</a></li>
-          </ul>
-        </li>
-        <li><a routerLink="/" fragment="contact">Contact</a></li>
->>>>>>> Stashed changes
       </ul>
     </nav>
     <div class="phone-header">

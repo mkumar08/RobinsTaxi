@@ -1,10 +1,5 @@
-<<<<<<< Updated upstream
 import { Component, ElementRef, ViewChild, AfterViewInit, HostListener, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
-=======
-import { Component, ElementRef, ViewChild, AfterViewInit, HostListener, inject } from '@angular/core';
-import { RouterLink } from '@angular/router';
->>>>>>> Stashed changes
 
 @Component({
     selector: 'app-header',
