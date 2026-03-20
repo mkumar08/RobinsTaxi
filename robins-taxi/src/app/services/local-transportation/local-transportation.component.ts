@@ -2,13 +2,14 @@ import { Component, OnInit, Inject } from "@angular/core";
 import { Title, Meta } from "@angular/platform-browser";
 import { DOCUMENT } from "@angular/common";
 import { RouterLink } from "@angular/router";
+import { TranslateModule } from "@ngx-translate/core";
 
 @Component({
   selector: "app-local-transportation",
   templateUrl: "./local-transportation.component.html",
   styleUrls: ["./local-transportation.component.css"],
   standalone: true,
-  imports: [RouterLink]
+  imports: [RouterLink, TranslateModule]
 })
 export class LocalTransportationComponent implements OnInit {
 

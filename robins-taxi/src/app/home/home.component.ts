@@ -1,12 +1,14 @@
 import { Component, OnInit, Inject } from "@angular/core";
 import { Title, Meta } from "@angular/platform-browser";
 import { DOCUMENT } from "@angular/common";
+import { TranslateModule } from "@ngx-translate/core";
 
 @Component({
     selector: "app-home",
     templateUrl: "./home.component.html",
     styleUrls: ["./home.component.css"],
-    standalone: true
+    standalone: true,
+    imports: [TranslateModule]
 })
 export class HomeComponent implements OnInit {
 

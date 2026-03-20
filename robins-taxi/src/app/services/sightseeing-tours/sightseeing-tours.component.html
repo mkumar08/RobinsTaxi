@@ -1,8 +1,8 @@
 <section class="service-hero">
   <div class="service-hero-overlay">
     <div class="container">
-      <h1>Sightseeing Tours</h1>
-      <p>Explore New York City, Hudson Valley &amp; the Catskills in comfort</p>
+      <h1>{{ 'SIGHTSEEING.HERO_TITLE' | translate }}</h1>
+      <p>{{ 'SIGHTSEEING.HERO_SUBTITLE' | translate }}</p>
     </div>
   </div>
 </section>
@@ -10,28 +10,24 @@
 <section class="service-content container">
   <div class="row align-items-center">
     <div class="col-md-7">
-      <h2>Discover the Best of New York with Robin's Taxi</h2>
-      <p>
-        Experience New York like never before with a personalized sightseeing tour from Robin's Taxi.
-        Our professional drivers know every hidden gem and landmark in Orange County, Hudson Valley,
-        and New York City. Sit back, relax, and let us take you on an unforgettable journey.
-      </p>
-      <h3>Popular Tour Destinations</h3>
+      <h2>{{ 'SIGHTSEEING.SECTION_TITLE' | translate }}</h2>
+      <p>{{ 'SIGHTSEEING.SECTION_DESC' | translate }}</p>
+      <h3>{{ 'SIGHTSEEING.DESTINATIONS_TITLE' | translate }}</h3>
       <ul class="service-list">
-        <li>New York City – Times Square, Central Park, and more</li>
-        <li>Hudson Valley – Scenic fall foliage and historical sites</li>
-        <li>Catskill Mountains – Natural parks and outdoor escapes</li>
-        <li>West Point Military Academy</li>
-        <li>Woodbury Common Premium Outlets</li>
-        <li>Bethel Woods Center for the Arts</li>
+        <li>{{ 'SIGHTSEEING.DEST_1' | translate }}</li>
+        <li>{{ 'SIGHTSEEING.DEST_2' | translate }}</li>
+        <li>{{ 'SIGHTSEEING.DEST_3' | translate }}</li>
+        <li>{{ 'SIGHTSEEING.DEST_4' | translate }}</li>
+        <li>{{ 'SIGHTSEEING.DEST_5' | translate }}</li>
+        <li>{{ 'SIGHTSEEING.DEST_6' | translate }}</li>
       </ul>
-      <h3>Tour Highlights</h3>
+      <h3>{{ 'SIGHTSEEING.HIGHLIGHTS_TITLE' | translate }}</h3>
       <ul class="service-list">
-        <li>Customizable itineraries tailored to your interests</li>
-        <li>Comfortable, air-conditioned vehicles</li>
-        <li>Knowledgeable local drivers</li>
-        <li>Perfect for families, couples, and groups</li>
-        <li>Flexible scheduling – book for hours or full days</li>
+        <li>{{ 'SIGHTSEEING.HIGH_1' | translate }}</li>
+        <li>{{ 'SIGHTSEEING.HIGH_2' | translate }}</li>
+        <li>{{ 'SIGHTSEEING.HIGH_3' | translate }}</li>
+        <li>{{ 'SIGHTSEEING.HIGH_4' | translate }}</li>
+        <li>{{ 'SIGHTSEEING.HIGH_5' | translate }}</li>
       </ul>
     </div>
     <div class="col-md-5 text-center">
@@ -39,9 +35,9 @@
     </div>
   </div>
   <div class="cta-section text-center">
-    <h3>Plan your perfect New York tour today!</h3>
-    <p>Call us at <a href="tel:+18453435555">845-343-5555</a> to customize your experience.</p>
-    <a href="tel:+18453435555" class="cta-button">Call to Book a Tour</a>
-    <a routerLink="/" class="cta-button cta-button-secondary">Back to Home</a>
+    <h3>{{ 'SIGHTSEEING.CTA_TITLE' | translate }}</h3>
+    <p [innerHTML]="'SIGHTSEEING.CTA_DESC' | translate"></p>
+    <a href="tel:+18453435555" class="cta-button">{{ 'SIGHTSEEING.CTA_BUTTON' | translate }}</a>
+    <a routerLink="/" class="cta-button cta-button-secondary">{{ 'SIGHTSEEING.BACK_HOME' | translate }}</a>
   </div>
 </section>

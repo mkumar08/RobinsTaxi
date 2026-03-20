@@ -232,3 +232,68 @@ ul {
 }
 
 /* Additional styles can be added below as needed */
+
+/* Language switcher */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 10px;
+}
+
+.lang-switcher button {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 4px 6px;
+  font-family: inherit;
+}
+
+.lang-switcher button:hover {
+  color: #f5ab41;
+}
+
+.lang-switcher button.active {
+  color: #f5ab41;
+  font-weight: bold;
+}
+
+.lang-switcher span {
+  color: #666;
+}
+
+.mobile-lang-switcher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.mobile-lang-switcher button {
+  background: transparent;
+  border: 1px solid #555;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 6px 16px;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.mobile-lang-switcher button:hover {
+  border-color: #f5ab41;
+  color: #f5ab41;
+}
+
+.mobile-lang-switcher button.active {
+  background-color: #f5ab41;
+  border-color: #f5ab41;
+  color: black;
+  font-weight: bold;
+}
+
+.mobile-lang-switcher span {
+  color: #666;
+}

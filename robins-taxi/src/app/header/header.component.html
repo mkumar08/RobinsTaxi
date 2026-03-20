@@ -10,8 +10,8 @@
     <nav class="menu-header">
       <!-- menu -->
       <ul>
-        <li><a routerLink="/" fragment="home">Home</a></li>
-        <li><a routerLink="/" fragment="about">About</a></li>
+        <li><a routerLink="/" fragment="home">{{ 'HEADER.HOME' | translate }}</a></li>
+        <li><a routerLink="/" fragment="about">{{ 'HEADER.ABOUT' | translate }}</a></li>
         <li class="has-dropdown" [class.open]="servicesDropdownOpen">
           <button
             type="button"
@@ -20,17 +20,22 @@
             [attr.aria-expanded]="servicesDropdownOpen"
             (click)="toggleServicesDropdown($event)"
           >
-            Services
+            {{ 'HEADER.SERVICES' | translate }}
           </button>
           <ul class="dropdown-menu-custom" [style.display]="servicesDropdownOpen ? 'flex' : 'none'">
-            <li><a routerLink="/services/airport-trips" (click)="closeServicesDropdown()">Airport Trips</a></li>
-            <li><a routerLink="/services/sightseeing-tours" (click)="closeServicesDropdown()">Sightseeing Tours</a></li>
-            <li><a routerLink="/services/long-distance-trips" (click)="closeServicesDropdown()">Long-Distance Trips</a></li>
-            <li><a routerLink="/services/local-transportation" (click)="closeServicesDropdown()">Local Transportation</a></li>
-            <li><a routerLink="/services/medical-transportation" (click)="closeServicesDropdown()">Medical Transportation</a></li>
+            <li><a routerLink="/services/airport-trips" (click)="closeServicesDropdown()">{{ 'HEADER.AIRPORT_TRIPS' | translate }}</a></li>
+            <li><a routerLink="/services/sightseeing-tours" (click)="closeServicesDropdown()">{{ 'HEADER.SIGHTSEEING_TOURS' | translate }}</a></li>
+            <li><a routerLink="/services/long-distance-trips" (click)="closeServicesDropdown()">{{ 'HEADER.LONG_DISTANCE_TRIPS' | translate }}</a></li>
+            <li><a routerLink="/services/local-transportation" (click)="closeServicesDropdown()">{{ 'HEADER.LOCAL_TRANSPORTATION' | translate }}</a></li>
+            <li><a routerLink="/services/medical-transportation" (click)="closeServicesDropdown()">{{ 'HEADER.MEDICAL_TRANSPORTATION' | translate }}</a></li>
           </ul>
         </li>
-        <li><a routerLink="/" fragment="contact">Contact</a></li>
+        <li><a routerLink="/" fragment="contact">{{ 'HEADER.CONTACT' | translate }}</a></li>
+        <li class="lang-switcher">
+          <button [class.active]="currentLang === 'en'" (click)="switchLanguage('en')">EN</button>
+          <span>|</span>
+          <button [class.active]="currentLang === 'es'" (click)="switchLanguage('es')">ES</button>
+        </li>
       </ul>
     </nav>
     <div class="phone-header">
@@ -44,16 +49,20 @@
       <img src="./../../assets/close.svg" alt="Close icon" />
     </button>
     <ul>
-      <li><a (click)="closeClicked()" routerLink="/" fragment="home">Home</a></li>
-      <li><a (click)="closeClicked()" routerLink="/" fragment="about">About</a></li>
-      <li><a (click)="closeClicked()" routerLink="/" fragment="contact">Contact</a></li>
-      <li class="mobile-services-label">Services</li>
-      <li><a (click)="closeClicked()" routerLink="/services/airport-trips">✈ Airport Trips</a></li>
-      <li><a (click)="closeClicked()" routerLink="/services/sightseeing-tours">🏙 Sightseeing Tours</a></li>
-      <li><a (click)="closeClicked()" routerLink="/services/long-distance-trips">🚗 Long-Distance Trips</a></li>
-      <li><a (click)="closeClicked()" routerLink="/services/local-transportation">📍 Local Transportation</a></li>
-      <li><a (click)="closeClicked()" routerLink="/services/medical-transportation">🏥 Medical Transportation</a></li>
-      <li></li>
+      <li><a (click)="closeClicked()" routerLink="/" fragment="home">{{ 'HEADER.HOME' | translate }}</a></li>
+      <li><a (click)="closeClicked()" routerLink="/" fragment="about">{{ 'HEADER.ABOUT' | translate }}</a></li>
+      <li><a (click)="closeClicked()" routerLink="/" fragment="contact">{{ 'HEADER.CONTACT' | translate }}</a></li>
+      <li class="mobile-services-label">{{ 'HEADER.SERVICES' | translate }}</li>
+      <li><a (click)="closeClicked()" routerLink="/services/airport-trips">✈ {{ 'HEADER.AIRPORT_TRIPS' | translate }}</a></li>
+      <li><a (click)="closeClicked()" routerLink="/services/sightseeing-tours">🏙 {{ 'HEADER.SIGHTSEEING_TOURS' | translate }}</a></li>
+      <li><a (click)="closeClicked()" routerLink="/services/long-distance-trips">🚗 {{ 'HEADER.LONG_DISTANCE_TRIPS' | translate }}</a></li>
+      <li><a (click)="closeClicked()" routerLink="/services/local-transportation">📍 {{ 'HEADER.LOCAL_TRANSPORTATION' | translate }}</a></li>
+      <li><a (click)="closeClicked()" routerLink="/services/medical-transportation">🏥 {{ 'HEADER.MEDICAL_TRANSPORTATION' | translate }}</a></li>
+      <li class="mobile-lang-switcher">
+        <button [class.active]="currentLang === 'en'" (click)="switchLanguage('en')">English</button>
+        <span>|</span>
+        <button [class.active]="currentLang === 'es'" (click)="switchLanguage('es')">Español</button>
+      </li>
       <li><a href="tel:+1 845-343-5555" (click)="closeClicked()"> <img src="../../assets/call.svg" alt="Phone icon" />+1 845-343-5555</a></li>
     </ul>
   </div>

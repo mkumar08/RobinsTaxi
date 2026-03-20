@@ -2,13 +2,14 @@ import { Component, OnInit, Inject } from "@angular/core";
 import { Title, Meta } from "@angular/platform-browser";
 import { DOCUMENT } from "@angular/common";
 import { RouterLink } from "@angular/router";
+import { TranslateModule } from "@ngx-translate/core";
 
 @Component({
   selector: "app-airport-trips",
   templateUrl: "./airport-trips.component.html",
   styleUrls: ["./airport-trips.component.css"],
   standalone: true,
-  imports: [RouterLink]
+  imports: [RouterLink, TranslateModule]
 })
 export class AirportTripsComponent implements OnInit {
 

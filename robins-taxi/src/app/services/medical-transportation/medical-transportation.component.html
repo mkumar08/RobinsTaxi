@@ -1,8 +1,8 @@
 <section class="service-hero">
   <div class="service-hero-overlay">
     <div class="container">
-      <h1>Non-Emergency Medical Transportation</h1>
-      <p>Compassionate, reliable rides to medical appointments in Orange County, NY</p>
+      <h1>{{ 'MEDICAL.HERO_TITLE' | translate }}</h1>
+      <p>{{ 'MEDICAL.HERO_SUBTITLE' | translate }}</p>
     </div>
   </div>
 </section>
@@ -10,30 +10,25 @@
 <section class="service-content container">
   <div class="row align-items-center">
     <div class="col-md-7">
-      <h2>Safe, Caring Transportation to Your Medical Appointments</h2>
-      <p>
-        Robin's Taxi provides non-emergency medical transportation (NEMT) for patients throughout
-        Orange County, NY. We understand that getting to medical appointments on time is critical
-        to your health and well-being. Our professional, compassionate drivers are here to ensure
-        you arrive safely, comfortably, and on schedule.
-      </p>
-      <h3>Medical Transportation Services</h3>
+      <h2>{{ 'MEDICAL.SECTION_TITLE' | translate }}</h2>
+      <p>{{ 'MEDICAL.SECTION_DESC' | translate }}</p>
+      <h3>{{ 'MEDICAL.SERVICES_TITLE' | translate }}</h3>
       <ul class="service-list">
-        <li>Doctor and specialist appointments</li>
-        <li>Dialysis center transportation (recurring rides available)</li>
-        <li>Hospital admissions and discharge</li>
-        <li>Physical and occupational therapy</li>
-        <li>Chemotherapy and radiation treatment</li>
-        <li>Outpatient procedure transport</li>
-        <li>Mental health and counseling appointments</li>
+        <li>{{ 'MEDICAL.SVC_1' | translate }}</li>
+        <li>{{ 'MEDICAL.SVC_2' | translate }}</li>
+        <li>{{ 'MEDICAL.SVC_3' | translate }}</li>
+        <li>{{ 'MEDICAL.SVC_4' | translate }}</li>
+        <li>{{ 'MEDICAL.SVC_5' | translate }}</li>
+        <li>{{ 'MEDICAL.SVC_6' | translate }}</li>
+        <li>{{ 'MEDICAL.SVC_7' | translate }}</li>
       </ul>
-      <h3>Our Commitment to Patient Care</h3>
+      <h3>{{ 'MEDICAL.COMMITMENT_TITLE' | translate }}</h3>
       <ul class="service-list">
-        <li>Patient-focused, respectful service</li>
-        <li>Assistance boarding and exiting the vehicle</li>
-        <li>Comfortable, clean, and accessible vehicles</li>
-        <li>Punctual pick-up and drop-off</li>
-        <li>Recurring ride scheduling for regular appointments</li>
+        <li>{{ 'MEDICAL.COMMIT_1' | translate }}</li>
+        <li>{{ 'MEDICAL.COMMIT_2' | translate }}</li>
+        <li>{{ 'MEDICAL.COMMIT_3' | translate }}</li>
+        <li>{{ 'MEDICAL.COMMIT_4' | translate }}</li>
+        <li>{{ 'MEDICAL.COMMIT_5' | translate }}</li>
       </ul>
     </div>
     <div class="col-md-5 text-center">
@@ -41,10 +36,10 @@
     </div>
   </div>
   <div class="cta-section text-center">
-    <h3>Schedule your medical transportation today</h3>
-    <p>Call us at <a href="tel:+18453435555">845-343-5555</a> or arrange online.</p>
-    <a href="tel:+18453435555" class="cta-button">Call to Arrange Transport</a>
-    <a href="https://www.medanswering.com/" target="_blank" rel="noopener noreferrer" class="cta-button">Arrange Online</a>
-    <a routerLink="/" class="cta-button cta-button-secondary">Back to Home</a>
+    <h3>{{ 'MEDICAL.CTA_TITLE' | translate }}</h3>
+    <p [innerHTML]="'MEDICAL.CTA_DESC' | translate"></p>
+    <a href="tel:+18453435555" class="cta-button">{{ 'MEDICAL.CTA_BUTTON' | translate }}</a>
+    <a href="https://www.medanswering.com/" target="_blank" rel="noopener noreferrer" class="cta-button">{{ 'MEDICAL.CTA_BUTTON_ONLINE' | translate }}</a>
+    <a routerLink="/" class="cta-button cta-button-secondary">{{ 'MEDICAL.BACK_HOME' | translate }}</a>
   </div>
 </section>

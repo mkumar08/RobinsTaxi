@@ -1,18 +1,28 @@
 import { Component, ElementRef, ViewChild, AfterViewInit, HostListener, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-header',
     templateUrl: './header.component.html',
     styleUrls: ['./header.component.css'],
   standalone: true,
-  imports: [RouterLink]
+  imports: [RouterLink, TranslateModule]
 })
 export class HeaderComponent implements AfterViewInit{
 
   @ViewChild('mobile', { static: false }) mobileMenu: ElementRef<HTMLElement>;
   servicesDropdownOpen = false;
   private readonly elementRef = inject<ElementRef<HTMLElement>>(ElementRef);
+  private readonly translate = inject(TranslateService);
+
+  get currentLang(): string {
+    return this.translate.currentLang || this.translate.defaultLang;
+  }
+
+  switchLanguage(lang: string) {
+    this.translate.use(lang);
+  }
 
   ngAfterViewInit(){
     if (this.mobileMenu) {

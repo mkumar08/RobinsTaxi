@@ -2,13 +2,14 @@ import { Component, OnInit, Inject } from "@angular/core";
 import { Title, Meta } from "@angular/platform-browser";
 import { DOCUMENT } from "@angular/common";
 import { RouterLink } from "@angular/router";
+import { TranslateModule } from "@ngx-translate/core";
 
 @Component({
   selector: "app-long-distance-trips",
   templateUrl: "./long-distance-trips.component.html",
   styleUrls: ["./long-distance-trips.component.css"],
   standalone: true,
-  imports: [RouterLink]
+  imports: [RouterLink, TranslateModule]
 })
 export class LongDistanceTripsComponent implements OnInit {
 

@@ -1,8 +1,8 @@
 <section class="service-hero">
   <div class="service-hero-overlay">
     <div class="container">
-      <h1>Local Transportation</h1>
-      <p>Reliable on-demand rides throughout Middletown &amp; Orange County, NY</p>
+      <h1>{{ 'LOCAL.HERO_TITLE' | translate }}</h1>
+      <p>{{ 'LOCAL.HERO_SUBTITLE' | translate }}</p>
     </div>
   </div>
 </section>
@@ -10,30 +10,25 @@
 <section class="service-content container">
   <div class="row align-items-center">
     <div class="col-md-7">
-      <h2>Your Everyday Ride, Whenever You Need It</h2>
-      <p>
-        Robin's Taxi is your trusted local transportation provider in Middletown and throughout
-        Orange County, NY. From quick errands to important appointments, we're always just a call
-        away. Our on-demand service means you don't need to wait – professional, courteous drivers
-        come to you.
-      </p>
-      <h3>Common Local Ride Types</h3>
+      <h2>{{ 'LOCAL.SECTION_TITLE' | translate }}</h2>
+      <p>{{ 'LOCAL.SECTION_DESC' | translate }}</p>
+      <h3>{{ 'LOCAL.RIDES_TITLE' | translate }}</h3>
       <ul class="service-list">
-        <li>Grocery shopping &amp; errands</li>
-        <li>Medical and dental appointments</li>
-        <li>School &amp; campus transportation</li>
-        <li>Restaurant and entertainment outings</li>
-        <li>Connecting to local bus and train stations</li>
-        <li>Late-night safe rides home</li>
+        <li>{{ 'LOCAL.RIDE_1' | translate }}</li>
+        <li>{{ 'LOCAL.RIDE_2' | translate }}</li>
+        <li>{{ 'LOCAL.RIDE_3' | translate }}</li>
+        <li>{{ 'LOCAL.RIDE_4' | translate }}</li>
+        <li>{{ 'LOCAL.RIDE_5' | translate }}</li>
+        <li>{{ 'LOCAL.RIDE_6' | translate }}</li>
       </ul>
-      <h3>Areas We Serve Locally</h3>
+      <h3>{{ 'LOCAL.AREAS_TITLE' | translate }}</h3>
       <ul class="service-list">
-        <li>Middletown, NY</li>
-        <li>Newburgh, NY</li>
-        <li>Port Jervis, NY</li>
-        <li>Goshen, NY</li>
-        <li>Monroe, NY</li>
-        <li>Chester and surrounding Orange County communities</li>
+        <li>{{ 'LOCAL.AREA_1' | translate }}</li>
+        <li>{{ 'LOCAL.AREA_2' | translate }}</li>
+        <li>{{ 'LOCAL.AREA_3' | translate }}</li>
+        <li>{{ 'LOCAL.AREA_4' | translate }}</li>
+        <li>{{ 'LOCAL.AREA_5' | translate }}</li>
+        <li>{{ 'LOCAL.AREA_6' | translate }}</li>
       </ul>
     </div>
     <div class="col-md-5 text-center">
@@ -41,9 +36,9 @@
     </div>
   </div>
   <div class="cta-section text-center">
-    <h3>Need a local ride right now?</h3>
-    <p>Call us at <a href="tel:+18453435555">845-343-5555</a> – we'll be there fast.</p>
-    <a href="tel:+18453435555" class="cta-button">Call for a Ride</a>
-    <a routerLink="/" class="cta-button cta-button-secondary">Back to Home</a>
+    <h3>{{ 'LOCAL.CTA_TITLE' | translate }}</h3>
+    <p [innerHTML]="'LOCAL.CTA_DESC' | translate"></p>
+    <a href="tel:+18453435555" class="cta-button">{{ 'LOCAL.CTA_BUTTON' | translate }}</a>
+    <a routerLink="/" class="cta-button cta-button-secondary">{{ 'LOCAL.BACK_HOME' | translate }}</a>
   </div>
 </section>

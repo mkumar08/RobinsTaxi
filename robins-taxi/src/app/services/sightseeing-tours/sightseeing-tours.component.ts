@@ -2,13 +2,14 @@ import { Component, OnInit, Inject } from "@angular/core";
 import { Title, Meta } from "@angular/platform-browser";
 import { DOCUMENT } from "@angular/common";
 import { RouterLink } from "@angular/router";
+import { TranslateModule } from "@ngx-translate/core";
 
 @Component({
   selector: "app-sightseeing-tours",
   templateUrl: "./sightseeing-tours.component.html",
   styleUrls: ["./sightseeing-tours.component.css"],
   standalone: true,
-  imports: [RouterLink]
+  imports: [RouterLink, TranslateModule]
 })
 export class SightseeingToursComponent implements OnInit {
 
