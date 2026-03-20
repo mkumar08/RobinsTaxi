@@ -192,6 +192,16 @@ ul {
   padding: 0;
 }
 
+/* Mobile services label */
+.mobile-services-label {
+  font-size: 0.75em;
+  color: #f5ab41;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-top: 16px;
+  padding-bottom: 4px;
+}
+
 /* Media queries for responsive adjustments */
 @media only screen and (max-width: 995px) {
   .col-md {
