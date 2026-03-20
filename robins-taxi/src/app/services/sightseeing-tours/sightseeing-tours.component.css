@@ -1,0 +1,120 @@
+.service-hero {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  color: white;
+  padding: 100px 0 60px;
+  text-align: center;
+}
+
+.service-hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.service-hero p {
+  font-size: 1.2rem;
+  opacity: 0.85;
+}
+
+.service-content {
+  padding: 60px 15px;
+}
+
+.service-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1a1a2e;
+}
+
+.service-content h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 24px;
+  margin-bottom: 10px;
+  color: #e8621a;
+}
+
+.service-content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+}
+
+.service-list li {
+  padding: 6px 0 6px 24px;
+  position: relative;
+  color: #444;
+}
+
+.service-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #e8621a;
+  font-weight: 700;
+}
+
+.service-img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.cta-section {
+  background: #f8f9fa;
+  padding: 50px 20px;
+  border-radius: 12px;
+  margin-top: 50px;
+}
+
+.cta-section h3 {
+  font-size: 1.8rem;
+  color: #1a1a2e;
+  margin-bottom: 12px;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 24px;
+}
+
+.cta-section a {
+  color: #e8621a;
+  font-weight: 600;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #e8621a;
+  color: white !important;
+  padding: 14px 36px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 8px;
+  transition: background 0.2s;
+}
+
+.cta-button:hover {
+  background: #c4511a;
+  text-decoration: none;
+  color: white !important;
+}
+
+.cta-button-secondary {
+  background: #1a1a2e;
+}
+
+.cta-button-secondary:hover {
+  background: #0f3460;
+}

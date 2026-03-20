@@ -5,15 +5,24 @@
         <img src="./../../assets/open-menu.svg" alt="Menu icon" />
       </button>
       <!-- logo and branding -->
-      <h1 class="site-title">Robin's Taxi</h1>
+      <h1 class="site-title"><a routerLink="/">Robin's Taxi</a></h1>
     </div>
     <nav class="menu-header">
       <!-- menu -->
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#footer">Services</a></li>
+        <li><a routerLink="/" fragment="home">Home</a></li>
+        <li><a routerLink="/" fragment="about">About</a></li>
+        <li class="has-dropdown">
+          <a routerLink="/" fragment="footer">Services</a>
+          <ul class="dropdown-menu-custom">
+            <li><a routerLink="/services/airport-trips">Airport Trips</a></li>
+            <li><a routerLink="/services/sightseeing-tours">Sightseeing Tours</a></li>
+            <li><a routerLink="/services/long-distance-trips">Long-Distance Trips</a></li>
+            <li><a routerLink="/services/local-transportation">Local Transportation</a></li>
+            <li><a routerLink="/services/medical-transportation">Medical Transportation</a></li>
+          </ul>
+        </li>
+        <li><a routerLink="/" fragment="contact">Contact</a></li>
       </ul>
     </nav>
     <div class="phone-header">
@@ -27,10 +36,15 @@
       <img src="./../../assets/close.svg" alt="Close icon" />
     </button>
     <ul>
-      <li><a (click)="closeClicked()" href="#home">Home</a></li>
-      <li><a (click)="closeClicked()" href="#about">About</a></li>
-      <li><a (click)="closeClicked()" href="#contact">Contact</a></li>
-      <li><a (click)="closeClicked()" href="#footer">Services</a></li>
+      <li><a (click)="closeClicked()" routerLink="/" fragment="home">Home</a></li>
+      <li><a (click)="closeClicked()" routerLink="/" fragment="about">About</a></li>
+      <li><a (click)="closeClicked()" routerLink="/" fragment="contact">Contact</a></li>
+      <li class="mobile-services-label">Services</li>
+      <li><a (click)="closeClicked()" routerLink="/services/airport-trips">✈ Airport Trips</a></li>
+      <li><a (click)="closeClicked()" routerLink="/services/sightseeing-tours">🏙 Sightseeing Tours</a></li>
+      <li><a (click)="closeClicked()" routerLink="/services/long-distance-trips">🚗 Long-Distance Trips</a></li>
+      <li><a (click)="closeClicked()" routerLink="/services/local-transportation">📍 Local Transportation</a></li>
+      <li><a (click)="closeClicked()" routerLink="/services/medical-transportation">🏥 Medical Transportation</a></li>
       <li></li>
       <li><a href="tel:+1 845-343-5555" (click)="closeClicked()"> <img src="../../assets/call.svg" alt="Phone icon" />+1 845-343-5555</a></li>
     </ul>
