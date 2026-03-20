@@ -11,13 +11,21 @@
   font-size: 4.0em;
   color: white;
   text-align: center;
+  line-height: 1.1;
+}
+
+.robins-text {
+  display: inline;
+  font-size: 0.9em;
+  letter-spacing: 12px;
+  vertical-align: baseline;
 }
 
 .header-image-text {
   margin: 0 auto;
-  margin-top: 100px;
-  padding-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 80px;
+  padding-top: 50px;
+  margin-bottom: 50px;
 }
 
 .overlay-div {
@@ -145,6 +153,40 @@
 .about-us {
   padding-top: 60px;
   padding-bottom: 30px;
+}
+
+.about-row {
+  display: flex !important;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 30px;
+  flex-wrap: nowrap;
+}
+
+.about-text {
+  flex: 1 1 auto !important;
+  min-width: 0;
+  width: auto !important;
+}
+
+.about-text p {
+  line-height: 1.8;
+  color: #444;
+  font-size: 1rem;
+}
+
+.about-image {
+  flex: 0 0 400px !important;
+  width: auto !important;
+  min-width: 300px;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
 }
 
 .vehicles img {
