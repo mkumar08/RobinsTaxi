@@ -6,11 +6,12 @@
 }
 
 .image-div h1 {
-  letter-spacing: 16px;
-  font-weight: 600;
-  font-size: 4.0em;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 3.8em;
   color: white;
   text-align: center;
+  margin: 0;
 }
 
 .header-image-text {
@@ -28,12 +29,14 @@
   color: #FBAA12;
 }
 
-.image-div p {
-  letter-spacing: 10px;
+.image-div .header-p {
+  letter-spacing: 3px;
   font-weight: 500;
-  font-size: 1.6em;
+  font-size: 1.2em;
   color: white;
   text-align: center;
+  line-height: 1.5;
+  margin-top: 18px;
 }
 
 .contact {
@@ -256,12 +259,16 @@ button a:hover {
 
 /* SEO content sections */
 
-.header-sub {
+.image-div .header-sub {
   color: #f1f1f1;
   text-align: center;
-  font-size: 1rem;
-  letter-spacing: 2px;
-  margin-top: 16px;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  margin: 16px auto 0;
+  max-width: 560px;
+  padding: 0 16px;
 }
 
 .hero-cta {
