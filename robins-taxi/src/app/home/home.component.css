@@ -253,3 +253,257 @@ button a:hover {
     letter-spacing: 10px;
   }
 }
+
+/* SEO content sections */
+
+.header-sub {
+  color: #f1f1f1;
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-top: 16px;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 24px;
+  padding-bottom: 60px;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 6px;
+  letter-spacing: 2px;
+  background-color: #FBAA12;
+  color: white;
+}
+
+.hero-btn:hover { color: white; opacity: 0.92; text-decoration: none; }
+
+.hero-btn.outline {
+  background: transparent;
+  border: 2px solid #FBAA12;
+  color: #FBAA12;
+}
+
+.hero-btn.outline:hover { color: #FBAA12; }
+
+.section-lead {
+  text-align: center;
+  font-size: 1.05rem;
+  color: #555;
+  margin: 0 auto 30px;
+  max-width: 800px;
+}
+
+.services {
+  padding: 60px 15px;
+}
+
+.services h2,
+.service-area h2,
+.hours h2,
+.testimonials h2,
+.faq h2,
+.vehicles-heading {
+  font-weight: 900;
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.services h2 span,
+.service-area h2 span,
+.hours h2 span,
+.testimonials h2 span,
+.faq h2 span,
+.vehicles-heading span { font-weight: 300; }
+
+.service-grid { margin-bottom: 20px; }
+
+.service-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-left: 4px solid #FBAA12;
+  border-radius: 6px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.service-card h3 {
+  color: #222;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin: 0 0 10px;
+}
+
+.service-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.fleet-title {
+  font-weight: 700;
+  text-align: center;
+  margin-top: 12px;
+  font-size: 1.2rem;
+}
+
+.fleet-desc {
+  text-align: center;
+  color: #555;
+  padding: 0 20px;
+  font-size: 0.95rem;
+}
+
+.vehicles-heading { padding-top: 20px; }
+
+.service-area {
+  padding: 60px 15px;
+  background: #fafafa;
+}
+
+.service-area h3 {
+  color: #FBAA12;
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.area-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.area-list li {
+  padding: 6px 0;
+  color: #333;
+  border-bottom: 1px dotted #ddd;
+}
+
+.hours {
+  padding: 60px 15px;
+}
+
+.hours-grid {
+  max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 20px;
+  border-bottom: 1px solid #f1f1f1;
+  font-size: 1rem;
+}
+
+.hours-row:last-child { border-bottom: 0; }
+.hours-row span:first-child { font-weight: 600; }
+.hours-row span:last-child { color: #FBAA12; font-weight: 600; }
+
+.testimonials {
+  padding: 60px 15px;
+  background: #fafafa;
+}
+
+.review {
+  background: #fff;
+  border-radius: 6px;
+  padding: 24px;
+  margin: 0 0 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.review blockquote {
+  font-style: italic;
+  color: #444;
+  line-height: 1.6;
+  margin: 0 0 12px;
+  font-size: 0.95rem;
+}
+
+.review figcaption {
+  color: #FBAA12;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.faq {
+  padding: 60px 15px;
+}
+
+.faq-list {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin-bottom: 10px;
+  background: #fff;
+}
+
+.faq-item summary {
+  font-weight: 600;
+  color: #222;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  padding-right: 30px;
+}
+
+.faq-item summary::-webkit-details-marker { display: none; }
+
+.faq-item summary::after {
+  content: '+';
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #FBAA12;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.faq-item[open] summary::after { content: '−'; }
+
+.faq-item p {
+  margin: 12px 0 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.contact-us p.sub {
+  color: #777;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  margin-top: 2px;
+}
+
+@media (max-width: 768px) {
+  .services h2,
+  .service-area h2,
+  .hours h2,
+  .testimonials h2,
+  .faq h2,
+  .vehicles-heading {
+    font-size: 32px;
+  }
+  .hero-btn { padding: 12px 20px; font-size: 0.9rem; }
+}
