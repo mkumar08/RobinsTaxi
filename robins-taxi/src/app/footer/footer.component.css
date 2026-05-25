@@ -1,12 +1,59 @@
 #footer {
   background-color: black;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   color: white;
+}
+
+#footer h4 {
+  color: #FBAA12;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  padding: 4px 0;
+  color: #ddd;
+  font-size: 0.92rem;
+}
+
+.footer-address {
+  font-style: normal;
+  color: #ddd;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.footer-phone a {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #FBAA12;
+  text-decoration: none;
+}
+
+.footer-hours {
+  color: #ddd;
+  margin-top: 10px;
+  font-size: 0.9rem;
 }
 
 .orange-button {
   margin: 2px auto 12px 2px;
+}
+
+.book-cta,
+.medical-cta {
+  display: inline-block;
+  text-decoration: none;
+  margin: 4px auto 10px;
 }
 
 .second-column {
@@ -16,23 +63,40 @@
 .second-column h2 {
   letter-spacing: 9px;
   padding-top: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 6px;
 }
 
-.second-column img {
-  height: 20px;
-  margin-left: 40px;
-  margin-right: 40px;
+.tagline {
+  color: #aaa;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+}
+
+.social {
+  margin-top: 14px;
+}
+
+.social a {
+  display: inline-block;
+  margin: 0 14px;
+}
+
+.social img {
+  height: 22px;
   cursor: pointer;
 }
 
 hr {
-  color: white;
-  width: 10px;
+  border: 0;
+  border-top: 1px solid #333;
+  margin: 30px 0 15px;
 }
 
 .copyrite {
   text-align: center;
+  color: #888;
+  font-size: 0.85rem;
 }
 
 a {
@@ -40,5 +104,5 @@ a {
 }
 
 a:hover {
-  color: white;
+  color: #FBAA12;
 }

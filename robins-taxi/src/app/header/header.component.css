@@ -37,6 +37,16 @@
   padding: 0; /* Reset padding */
 }
 
+.site-title-link {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.site-title-link:hover .site-title {
+  color: #f5ab41;
+}
+
 /* Navbar menu list styles */
 .navbar nav ul {
   list-style-type: none;

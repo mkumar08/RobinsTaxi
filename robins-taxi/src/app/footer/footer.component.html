@@ -1,28 +1,64 @@
-<section id="footer">
+<footer id="footer" role="contentinfo">
   <div class="container">
     <div class="row">
       <div class="col-md">
-        <!-- col 1 -->
         <h4>Our Services</h4>
-        <br>
-        <p>Taxi Service in Orange County</p>
-        <p>Taxi to New York City</p>
-        <p>Taxi to New York Airports</p>
-        <p>Non-Emergency Medical Transportation</p>
+        <ul class="footer-list">
+          <li>Taxi in Middletown, NY</li>
+          <li>Airport Car Service (JFK, LGA, EWR, SWF)</li>
+          <li>Van &amp; Group Transportation</li>
+          <li>Taxi to New York City</li>
+          <li>Non-Emergency Medical Transportation</li>
+          <li>Wedding &amp; Event Car Service</li>
+        </ul>
+      </div>
+      <div class="col-md">
+        <h4>Service Area</h4>
+        <ul class="footer-list">
+          <li>Middletown, NY</li>
+          <li>Goshen &middot; Monroe &middot; Newburgh</li>
+          <li>Wallkill &middot; Chester &middot; Warwick</li>
+          <li>Port Jervis &middot; Pine Bush &middot; Walden</li>
+          <li>All of Orange County, NY</li>
+          <li>NYC Metro Area</li>
+        </ul>
+      </div>
+      <div class="col-md">
+        <h4>Contact</h4>
+        <address class="footer-address">
+          Robin's Taxi<br>
+          86 Cottage Street<br>
+          Middletown, NY 10940
+        </address>
+        <p class="footer-phone">
+          <a href="tel:+18453435555" aria-label="Call 845-343-5555">&#9742; 845-343-5555</a>
+        </p>
+        <p>
+          <a href="mailto:contact&#64;nyrobinstaxi.com">contact&#64;nyrobinstaxi.com</a>
+        </p>
+        <p class="footer-hours"><strong>Open 24/7</strong> &mdash; including holidays</p>
       </div>
       <div class="col-md second-column">
-        <!-- col 2 -->
-        <h2>ROBINS TAXI</h2>
-        <button (click)="onNavigatetoMedicalReservation()" class="orange-button">Arrange Medical Transportation</button>
-        <br>
-        <a href="https://www.facebook.com/robinstaxi86/" target="_blank"><img src="./../../assets/facebook.svg" alt=""></a>
-        <a href="https://www.facebook.com/robinstaxi86/" target="_blank"><img src="./../../assets/instagram.svg" alt=""></a>
-        <a href="https://www.facebook.com/robinstaxi86/" target="_blank"><img src="./../../assets/twitter.svg" alt=""></a>
+        <h2>ROBIN'S TAXI</h2>
+        <p class="tagline">Middletown, NY &middot; Orange County</p>
+        <a class="orange-button book-cta" href="tel:+18453435555">BOOK A TAXI &middot; CALL 845-343-5555</a>
+        <button (click)="onNavigatetoMedicalReservation()" class="orange-button medical-cta">Arrange Medical Transportation</button>
+        <div class="social">
+          <a href="https://www.facebook.com/robinstaxi86/" target="_blank" rel="noopener" aria-label="Robin's Taxi on Facebook">
+            <img src="./../../assets/facebook.svg" alt="Facebook">
+          </a>
+          <a href="https://www.facebook.com/robinstaxi86/" target="_blank" rel="noopener" aria-label="Robin's Taxi on Instagram">
+            <img src="./../../assets/instagram.svg" alt="Instagram">
+          </a>
+          <a href="https://www.facebook.com/robinstaxi86/" target="_blank" rel="noopener" aria-label="Robin's Taxi on Twitter">
+            <img src="./../../assets/twitter.svg" alt="Twitter">
+          </a>
+        </div>
       </div>
     </div>
     <hr>
     <div class="copyrite">
-      <p>© ROBIN'S TAXI 2025</p>
+      <p>&copy; {{currentYear}} Robin's Taxi &middot; Middletown, NY &middot; All rights reserved.</p>
     </div>
   </div>
-</section>
+</footer>
