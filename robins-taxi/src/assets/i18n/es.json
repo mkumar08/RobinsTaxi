@@ -50,7 +50,7 @@
     "MEDICAL_TITLE": "Transporte Médico",
     "MEDICAL_DESC": "Transporte médico no urgente confiable y puntual hacia y desde citas, centros de diálisis y hospitales en todo el Condado de Orange.",
     "GROUP_TITLE": "Vanes y Transporte de Grupos",
-    "GROUP_DESC": "Servicio de vanes para familias, equipos deportivos, fiestas de bodas y grupos corporativos. Capacidad cómoda para 7-14 pasajeros con equipaje."
+    "GROUP_DESC": "Servicio de vanes para familias, equipos deportivos, fiestas de bodas y grupos corporativos. Capacidad cómoda para 7 pasajeros."
   },
   "HOME_AREA": {
     "TITLE": "ÁREA DE",
@@ -63,15 +63,14 @@
   "HOME_HOURS": {
     "TITLE": "HORARIO DE",
     "TITLE_SPAN": "OPERACIÓN",
-    "LEAD": "Abierto las 24 horas del día, los 7 días de la semana, incluidos los días festivos. Llame en cualquier momento para reservar.",
+    "LEAD": "Llame en cualquier momento para reservar.",
     "MON": "Lunes",
     "TUE": "Martes",
     "WED": "Miércoles",
     "THU": "Jueves",
     "FRI": "Viernes",
     "SAT": "Sábado",
-    "SUN": "Domingo",
-    "OPEN_24": "Abierto 24 Horas"
+    "SUN": "Domingo"
   },
   "HOME_REVIEWS": {
     "TITLE": "LO QUE DICEN",
@@ -118,7 +117,6 @@
     "COPYRIGHT": "© ROBIN'S TAXI 2025",
     "SERVICE_AREA": "Área de Servicio",
     "CONTACT_HEAD": "Contacto",
-    "OPEN_24": "Abierto 24/7 — incluyendo festivos",
     "BOOK_NOW": "RESERVE UN TAXI · LLAME AL 845-343-5555",
     "TAGLINE": "Middletown, NY · Condado de Orange",
     "AREA_OC": "Todo el Condado de Orange, NY",

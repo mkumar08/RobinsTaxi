@@ -50,7 +50,7 @@
     "MEDICAL_TITLE": "Medical Transportation",
     "MEDICAL_DESC": "Reliable, prompt non-emergency medical transportation to and from appointments, dialysis centers, and hospitals throughout Orange County.",
     "GROUP_TITLE": "Van & Group Transportation",
-    "GROUP_DESC": "Passenger van service for families, sports teams, wedding parties, and corporate groups. Comfortably seat 7–14 passengers with luggage."
+    "GROUP_DESC": "Passenger van service for families, sports teams, wedding parties, and corporate groups. Comfortably seat 7 passengers."
   },
   "HOME_AREA": {
     "TITLE": "SERVICE",
@@ -63,15 +63,14 @@
   "HOME_HOURS": {
     "TITLE": "HOURS OF",
     "TITLE_SPAN": "OPERATION",
-    "LEAD": "Open 24 hours a day, 7 days a week, including holidays. Call any time to book.",
+    "LEAD": "Call any time to book.",
     "MON": "Monday",
     "TUE": "Tuesday",
     "WED": "Wednesday",
     "THU": "Thursday",
     "FRI": "Friday",
     "SAT": "Saturday",
-    "SUN": "Sunday",
-    "OPEN_24": "Open 24 Hours"
+    "SUN": "Sunday"
   },
   "HOME_REVIEWS": {
     "TITLE": "WHAT CUSTOMERS",
@@ -118,7 +117,6 @@
     "COPYRIGHT": "© ROBIN'S TAXI 2025",
     "SERVICE_AREA": "Service Area",
     "CONTACT_HEAD": "Contact",
-    "OPEN_24": "Open 24/7 — including holidays",
     "BOOK_NOW": "BOOK A TAXI · CALL 845-343-5555",
     "TAGLINE": "Middletown, NY · Orange County",
     "AREA_OC": "All of Orange County, NY",

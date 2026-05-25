@@ -21,7 +21,7 @@ export class AirportTripsComponent implements OnInit {
 
   ngOnInit(): void {
     this.title.setTitle("Airport Trips – Robin's Taxi | Orange County to JFK, LGA, EWR");
-    this.meta.updateTag({ name: "description", content: "Reliable airport taxi service from Orange County and Middletown, NY to JFK, LaGuardia, Newark, and Stewart airports. On-time, professional drivers available 24/7." });
+    this.meta.updateTag({ name: "description", content: "Reliable airport taxi service from Orange County and Middletown, NY to JFK, LaGuardia, Newark, and Stewart airports. On-time, professional drivers available at your convenience." });
     this.meta.updateTag({ name: "keywords", content: "airport taxi, JFK taxi, LaGuardia taxi, Newark airport taxi, Stewart airport, Orange County airport transportation, Middletown NY airport rides" });
 
     const script = this.document.createElement("script");
