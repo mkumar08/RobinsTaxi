@@ -1,0 +1,42 @@
+<section class="service-hero">
+  <div class="service-hero-overlay">
+    <div class="container">
+      <h1>{{ 'LONG_DISTANCE.HERO_TITLE' | translate }}</h1>
+      <p>{{ 'LONG_DISTANCE.HERO_SUBTITLE' | translate }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="service-content container">
+  <div class="row align-items-center">
+    <div class="col-md-7">
+      <h2>{{ 'LONG_DISTANCE.SECTION_TITLE' | translate }}</h2>
+      <p>{{ 'LONG_DISTANCE.SECTION_DESC' | translate }}</p>
+      <h3>{{ 'LONG_DISTANCE.DESTINATIONS_TITLE' | translate }}</h3>
+      <ul class="service-list">
+        <li>{{ 'LONG_DISTANCE.DEST_1' | translate }}</li>
+        <li>{{ 'LONG_DISTANCE.DEST_2' | translate }}</li>
+        <li>{{ 'LONG_DISTANCE.DEST_3' | translate }}</li>
+        <li>{{ 'LONG_DISTANCE.DEST_4' | translate }}</li>
+        <li>{{ 'LONG_DISTANCE.DEST_5' | translate }}</li>
+      </ul>
+      <h3>{{ 'LONG_DISTANCE.WHY_TITLE' | translate }}</h3>
+      <ul class="service-list">
+        <li>{{ 'LONG_DISTANCE.WHY_1' | translate }}</li>
+        <li>{{ 'LONG_DISTANCE.WHY_2' | translate }}</li>
+        <li>{{ 'LONG_DISTANCE.WHY_3' | translate }}</li>
+        <li>{{ 'LONG_DISTANCE.WHY_4' | translate }}</li>
+        <li>{{ 'LONG_DISTANCE.WHY_5' | translate }}</li>
+      </ul>
+    </div>
+    <div class="col-md-5 text-center">
+      <img src="/assets/taxi.jpg" alt="Taxi for long-distance taxi trips" class="service-img" />
+    </div>
+  </div>
+  <div class="cta-section text-center">
+    <h3>{{ 'LONG_DISTANCE.CTA_TITLE' | translate }}</h3>
+    <p [innerHTML]="'LONG_DISTANCE.CTA_DESC' | translate"></p>
+    <a href="tel:+18453435555" class="cta-button">{{ 'LONG_DISTANCE.CTA_BUTTON' | translate }}</a>
+    <a routerLink="/" class="cta-button cta-button-secondary">{{ 'LONG_DISTANCE.BACK_HOME' | translate }}</a>
+  </div>
+</section>

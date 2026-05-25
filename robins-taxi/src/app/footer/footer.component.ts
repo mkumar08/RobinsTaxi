@@ -1,10 +1,13 @@
 import { Component } from "@angular/core";
+import { RouterLink } from "@angular/router";
+import { TranslateModule } from "@ngx-translate/core";
 
 @Component({
     selector: "app-footer",
     templateUrl: "./footer.component.html",
     styleUrls: ["./footer.component.css"],
-  standalone: true
+  standalone: true,
+  imports: [RouterLink, TranslateModule]
 })
 export class FooterComponent {
   currentYear = new Date().getFullYear();

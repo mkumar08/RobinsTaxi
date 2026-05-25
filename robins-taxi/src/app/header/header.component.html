@@ -1,40 +1,69 @@
-<header class="nav" role="banner">
+<section class="nav">
   <div class="container navbar">
     <div class="col-md">
       <button class="ham-menu" aria-label="Open menu" (click)="menuClicked()" (keydown.enter)="menuClicked()" (keydown.space)="menuClicked()">
         <img src="./../../assets/open-menu.svg" alt="Menu icon" />
       </button>
-      <a href="#home" class="site-title-link" aria-label="Robin's Taxi - Middletown NY home">
-        <h1 class="site-title">Robin's Taxi</h1>
-      </a>
+      <!-- logo and branding -->
+      <h1 class="site-title"><a routerLink="/">Robin's Taxi</a></h1>
     </div>
-    <nav class="menu-header" aria-label="Main navigation">
+    <nav class="menu-header">
+      <!-- menu -->
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#service-area">Service Area</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a routerLink="/" fragment="home">{{ 'HEADER.HOME' | translate }}</a></li>
+        <li><a routerLink="/" fragment="about">{{ 'HEADER.ABOUT' | translate }}</a></li>
+        <li class="has-dropdown" [class.open]="servicesDropdownOpen">
+          <button
+            type="button"
+            class="services-toggle"
+            aria-haspopup="true"
+            [attr.aria-expanded]="servicesDropdownOpen"
+            (click)="toggleServicesDropdown($event)"
+          >
+            {{ 'HEADER.SERVICES' | translate }}
+          </button>
+          <ul class="dropdown-menu-custom" [style.display]="servicesDropdownOpen ? 'flex' : 'none'">
+            <li><a routerLink="/services/airport-trips" (click)="closeServicesDropdown()">{{ 'HEADER.AIRPORT_TRIPS' | translate }}</a></li>
+            <li><a routerLink="/services/sightseeing-tours" (click)="closeServicesDropdown()">{{ 'HEADER.SIGHTSEEING_TOURS' | translate }}</a></li>
+            <li><a routerLink="/services/long-distance-trips" (click)="closeServicesDropdown()">{{ 'HEADER.LONG_DISTANCE_TRIPS' | translate }}</a></li>
+            <li><a routerLink="/services/local-transportation" (click)="closeServicesDropdown()">{{ 'HEADER.LOCAL_TRANSPORTATION' | translate }}</a></li>
+            <li><a routerLink="/services/medical-transportation" (click)="closeServicesDropdown()">{{ 'HEADER.MEDICAL_TRANSPORTATION' | translate }}</a></li>
+          </ul>
+        </li>
+        <li><a routerLink="/" fragment="contact">{{ 'HEADER.CONTACT' | translate }}</a></li>
+        <li class="lang-switcher">
+          <button [class.active]="currentLang === 'en'" (click)="switchLanguage('en')">EN</button>
+          <span>|</span>
+          <button [class.active]="currentLang === 'es'" (click)="switchLanguage('es')">ES</button>
+        </li>
       </ul>
     </nav>
     <div class="phone-header">
+      <!-- phone no -->
       <img src="./../../assets/call.svg" alt="Phone icon" />
-      <h3><a href="tel:+18453435555" aria-label="Call Robin's Taxi at 845-343-5555">+1 845-343-5555</a></h3>
+      <h3><a href="tel:+1845-343-5555">+1 845-343-5555</a></h3>
     </div>
   </div>
-  <div class="overlay" #mobile role="dialog" aria-label="Mobile menu">
+  <div class="overlay" #mobile>
     <button class="close" aria-label="Close menu" (click)="closeClicked()" (keydown.enter)="closeClicked()" (keydown.escape)="closeClicked()">
       <img src="./../../assets/close.svg" alt="Close icon" />
     </button>
     <ul>
-      <li><a (click)="closeClicked()" href="#home">Home</a></li>
-      <li><a (click)="closeClicked()" href="#about">About</a></li>
-      <li><a (click)="closeClicked()" href="#services">Services</a></li>
-      <li><a (click)="closeClicked()" href="#service-area">Service Area</a></li>
-      <li><a (click)="closeClicked()" href="#faq">FAQ</a></li>
-      <li><a (click)="closeClicked()" href="#contact">Contact</a></li>
-      <li><a href="tel:+18453435555" (click)="closeClicked()"><img src="../../assets/call.svg" alt="Phone icon" />+1 845-343-5555</a></li>
+      <li><a (click)="closeClicked()" routerLink="/" fragment="home">{{ 'HEADER.HOME' | translate }}</a></li>
+      <li><a (click)="closeClicked()" routerLink="/" fragment="about">{{ 'HEADER.ABOUT' | translate }}</a></li>
+      <li><a (click)="closeClicked()" routerLink="/" fragment="contact">{{ 'HEADER.CONTACT' | translate }}</a></li>
+      <li class="mobile-services-label">{{ 'HEADER.SERVICES' | translate }}</li>
+      <li><a (click)="closeClicked()" routerLink="/services/airport-trips">✈ {{ 'HEADER.AIRPORT_TRIPS' | translate }}</a></li>
+      <li><a (click)="closeClicked()" routerLink="/services/sightseeing-tours">🏙 {{ 'HEADER.SIGHTSEEING_TOURS' | translate }}</a></li>
+      <li><a (click)="closeClicked()" routerLink="/services/long-distance-trips">🚗 {{ 'HEADER.LONG_DISTANCE_TRIPS' | translate }}</a></li>
+      <li><a (click)="closeClicked()" routerLink="/services/local-transportation">📍 {{ 'HEADER.LOCAL_TRANSPORTATION' | translate }}</a></li>
+      <li><a (click)="closeClicked()" routerLink="/services/medical-transportation">🏥 {{ 'HEADER.MEDICAL_TRANSPORTATION' | translate }}</a></li>
+      <li class="mobile-lang-switcher">
+        <button [class.active]="currentLang === 'en'" (click)="switchLanguage('en')">English</button>
+        <span>|</span>
+        <button [class.active]="currentLang === 'es'" (click)="switchLanguage('es')">Español</button>
+      </li>
+      <li><a href="tel:+1 845-343-5555" (click)="closeClicked()"> <img src="../../assets/call.svg" alt="Phone icon" />+1 845-343-5555</a></li>
     </ul>
   </div>
-</header>
+</section>

@@ -1,0 +1,43 @@
+<section class="service-hero">
+  <div class="service-hero-overlay">
+    <div class="container">
+      <h1>{{ 'SIGHTSEEING.HERO_TITLE' | translate }}</h1>
+      <p>{{ 'SIGHTSEEING.HERO_SUBTITLE' | translate }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="service-content container">
+  <div class="row align-items-center">
+    <div class="col-md-7">
+      <h2>{{ 'SIGHTSEEING.SECTION_TITLE' | translate }}</h2>
+      <p>{{ 'SIGHTSEEING.SECTION_DESC' | translate }}</p>
+      <h3>{{ 'SIGHTSEEING.DESTINATIONS_TITLE' | translate }}</h3>
+      <ul class="service-list">
+        <li>{{ 'SIGHTSEEING.DEST_1' | translate }}</li>
+        <li>{{ 'SIGHTSEEING.DEST_2' | translate }}</li>
+        <li>{{ 'SIGHTSEEING.DEST_3' | translate }}</li>
+        <li>{{ 'SIGHTSEEING.DEST_4' | translate }}</li>
+        <li>{{ 'SIGHTSEEING.DEST_5' | translate }}</li>
+        <li>{{ 'SIGHTSEEING.DEST_6' | translate }}</li>
+      </ul>
+      <h3>{{ 'SIGHTSEEING.HIGHLIGHTS_TITLE' | translate }}</h3>
+      <ul class="service-list">
+        <li>{{ 'SIGHTSEEING.HIGH_1' | translate }}</li>
+        <li>{{ 'SIGHTSEEING.HIGH_2' | translate }}</li>
+        <li>{{ 'SIGHTSEEING.HIGH_3' | translate }}</li>
+        <li>{{ 'SIGHTSEEING.HIGH_4' | translate }}</li>
+        <li>{{ 'SIGHTSEEING.HIGH_5' | translate }}</li>
+      </ul>
+    </div>
+    <div class="col-md-5 text-center">
+      <img src="/assets/taxi.jpg" alt="Taxi for sightseeing tours in New York" class="service-img" />
+    </div>
+  </div>
+  <div class="cta-section text-center">
+    <h3>{{ 'SIGHTSEEING.CTA_TITLE' | translate }}</h3>
+    <p [innerHTML]="'SIGHTSEEING.CTA_DESC' | translate"></p>
+    <a href="tel:+18453435555" class="cta-button">{{ 'SIGHTSEEING.CTA_BUTTON' | translate }}</a>
+    <a routerLink="/" class="cta-button cta-button-secondary">{{ 'SIGHTSEEING.BACK_HOME' | translate }}</a>
+  </div>
+</section>

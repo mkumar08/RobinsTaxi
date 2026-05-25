@@ -2,17 +2,18 @@
   <div class="container">
     <div class="row">
       <div class="col-md">
-        <h4>Our Services</h4>
+        <!-- col 1: linked services with i18n -->
+        <h4>{{ 'FOOTER.OUR_SERVICES' | translate }}</h4>
         <ul class="footer-list">
-          <li>Taxi in Middletown, NY</li>
-          <li>Airport Car Service (JFK, LGA, EWR, SWF)</li>
-          <li>Van &amp; Group Transportation</li>
-          <li>Taxi to New York City</li>
-          <li>Non-Emergency Medical Transportation</li>
-          <li>Wedding &amp; Event Car Service</li>
+          <li><a routerLink="/services/airport-trips">{{ 'HEADER.AIRPORT_TRIPS' | translate }}</a></li>
+          <li><a routerLink="/services/sightseeing-tours">{{ 'HEADER.SIGHTSEEING_TOURS' | translate }}</a></li>
+          <li><a routerLink="/services/long-distance-trips">{{ 'HEADER.LONG_DISTANCE_TRIPS' | translate }}</a></li>
+          <li><a routerLink="/services/local-transportation">{{ 'HEADER.LOCAL_TRANSPORTATION' | translate }}</a></li>
+          <li><a routerLink="/services/medical-transportation">{{ 'FOOTER.NEMT' | translate }}</a></li>
         </ul>
       </div>
       <div class="col-md">
+        <!-- col 2: service area -->
         <h4>Service Area</h4>
         <ul class="footer-list">
           <li>Middletown, NY</li>
@@ -24,6 +25,7 @@
         </ul>
       </div>
       <div class="col-md">
+        <!-- col 3: contact + NAP + hours -->
         <h4>Contact</h4>
         <address class="footer-address">
           Robin's Taxi<br>
@@ -39,19 +41,20 @@
         <p class="footer-hours"><strong>Open 24/7</strong> &mdash; including holidays</p>
       </div>
       <div class="col-md second-column">
+        <!-- col 4: branded CTAs + social -->
         <h2>ROBIN'S TAXI</h2>
         <p class="tagline">Middletown, NY &middot; Orange County</p>
         <a class="orange-button book-cta" href="tel:+18453435555">BOOK A TAXI &middot; CALL 845-343-5555</a>
-        <button (click)="onNavigatetoMedicalReservation()" class="orange-button medical-cta">Arrange Medical Transportation</button>
+        <button (click)="onNavigatetoMedicalReservation()" class="orange-button medical-cta">{{ 'FOOTER.ARRANGE_MEDICAL' | translate }}</button>
         <div class="social">
           <a href="https://www.facebook.com/robinstaxi86/" target="_blank" rel="noopener" aria-label="Robin's Taxi on Facebook">
-            <img src="./../../assets/facebook.svg" alt="Facebook">
+            <img src="./../../assets/facebook.svg" alt="Follow Robin's Taxi on Facebook">
           </a>
           <a href="https://www.facebook.com/robinstaxi86/" target="_blank" rel="noopener" aria-label="Robin's Taxi on Instagram">
-            <img src="./../../assets/instagram.svg" alt="Instagram">
+            <img src="./../../assets/instagram.svg" alt="Follow Robin's Taxi on Instagram">
           </a>
           <a href="https://www.facebook.com/robinstaxi86/" target="_blank" rel="noopener" aria-label="Robin's Taxi on Twitter">
-            <img src="./../../assets/twitter.svg" alt="Twitter">
+            <img src="./../../assets/twitter.svg" alt="Follow Robin's Taxi on Twitter">
           </a>
         </div>
       </div>

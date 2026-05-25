@@ -1,0 +1,41 @@
+<section class="service-hero">
+  <div class="service-hero-overlay">
+    <div class="container">
+      <h1>{{ 'AIRPORT.HERO_TITLE' | translate }}</h1>
+      <p>{{ 'AIRPORT.HERO_SUBTITLE' | translate }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="service-content container">
+  <div class="row align-items-center">
+    <div class="col-md-7">
+      <h2>{{ 'AIRPORT.SECTION_TITLE' | translate }}</h2>
+      <p>{{ 'AIRPORT.SECTION_DESC' | translate }}</p>
+      <h3>{{ 'AIRPORT.AIRPORTS_TITLE' | translate }}</h3>
+      <ul class="service-list">
+        <li>{{ 'AIRPORT.AIRPORT_JFK' | translate }}</li>
+        <li>{{ 'AIRPORT.AIRPORT_LGA' | translate }}</li>
+        <li>{{ 'AIRPORT.AIRPORT_EWR' | translate }}</li>
+        <li>{{ 'AIRPORT.AIRPORT_SWF' | translate }}</li>
+      </ul>
+      <h3>{{ 'AIRPORT.WHY_TITLE' | translate }}</h3>
+      <ul class="service-list">
+        <li>{{ 'AIRPORT.WHY_1' | translate }}</li>
+        <li>{{ 'AIRPORT.WHY_2' | translate }}</li>
+        <li>{{ 'AIRPORT.WHY_3' | translate }}</li>
+        <li>{{ 'AIRPORT.WHY_4' | translate }}</li>
+        <li>{{ 'AIRPORT.WHY_5' | translate }}</li>
+      </ul>
+    </div>
+    <div class="col-md-5 text-center">
+      <img src="/assets/taxi.jpg" alt="Taxi for airport trips" class="service-img" />
+    </div>
+  </div>
+  <div class="cta-section text-center">
+    <h3>{{ 'AIRPORT.CTA_TITLE' | translate }}</h3>
+    <p [innerHTML]="'AIRPORT.CTA_DESC' | translate"></p>
+    <a href="tel:+18453435555" class="cta-button">{{ 'AIRPORT.CTA_BUTTON' | translate }}</a>
+    <a routerLink="/" class="cta-button cta-button-secondary">{{ 'AIRPORT.BACK_HOME' | translate }}</a>
+  </div>
+</section>
